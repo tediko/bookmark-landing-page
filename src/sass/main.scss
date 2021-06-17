@@ -6,4 +6,7 @@
 @use 'utilities/helpers';
 
 /* Components */
+@use 'components/header';
+@use 'components/mobile-nav';
+@use 'components/desktop-nav';
 /* Layout */
