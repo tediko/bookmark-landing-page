@@ -1,0 +1,28 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tediko/bookmark-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tediko/bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/tediko/bookmark-landing-page#readme",
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
+    "laravel-mix": "^6.0.20",
+    "node-sass": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass-loader": "^12.1.0"
+  }
+}
