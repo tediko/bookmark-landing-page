@@ -124,6 +124,41 @@ var Header = function Header() {
 
 /***/ }),
 
+/***/ "./src/js/components/Icon.js":
+/*!***********************************!*\
+  !*** ./src/js/components/Icon.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_icomoon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-icomoon */ "./node_modules/react-icomoon/dist/index.js");
+/* harmony import */ var react_icomoon__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_icomoon__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var iconSet = __webpack_require__(/*! ../selection.json */ "./src/js/selection.json");
+
+var Icon = function Icon(_ref) {
+  var name = _ref.name,
+      size = _ref.size,
+      color = _ref.color;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)((react_icomoon__WEBPACK_IMPORTED_MODULE_0___default()), {
+    iconSet: iconSet,
+    disableFill: "true",
+    icon: name,
+    size: size,
+    color: color
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
+
+/***/ }),
+
 /***/ "./src/js/components/MobileNav.js":
 /*!****************************************!*\
   !*** ./src/js/components/MobileNav.js ***!
@@ -134,62 +169,74 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Icon */ "./src/js/components/Icon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
 var MobileNav = function MobileNav() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("nav", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("nav", {
     className: "header__nav mobile-nav",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
       className: "mobile-nav__menu",
       "aria-label": "Menu toggle",
       "aria-expanded": "false",
       "aria-controls": "nav-list",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
         className: "mobile-nav__menu-bars"
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "mobile-nav__wrapper",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
         className: "mobile-nav__list",
         id: "nav-list",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
           className: "mobile-nav__item",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
             href: "#",
             className: "mobile-nav__link",
             children: "Features"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
           className: "mobile-nav__item",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
             href: "#",
             className: "mobile-nav__link",
             children: "Pricing"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
           className: "mobile-nav__item",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
             href: "#",
             className: "mobile-nav__link",
             children: "Contact"
           })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
         href: "#",
-        className: "mobile-nav__cta",
+        className: "mobile-nav__cta btn--login-mobile",
         children: "Login"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "mobile-nav__socials",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
           href: "#",
           className: "mobile-nav__socials-link",
-          "aria-label": "Follow us on Facebook"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          "aria-label": "Follow us on Facebook",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
+            name: "fb",
+            size: 25,
+            color: "white"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
           href: "#",
           className: "mobile-nav__socials-link",
-          "aria-label": "Follow us on Twitter"
+          "aria-label": "Follow us on Twitter",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
+            name: "tt",
+            size: 25,
+            color: "white"
+          })
         })]
       })]
     })]
@@ -26657,6 +26704,84 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-icomoon/dist/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/react-icomoon/dist/index.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.iconList = void 0;
+var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var style = {
+    display: "inline-block",
+    stroke: "currentColor",
+    fill: "currentColor",
+};
+var IcoMoon = function (_a) {
+    var iconSet = _a.iconSet, icon = _a.icon, size = _a.size, disableFill = _a.disableFill, removeInlineStyle = _a.removeInlineStyle, SvgComponent = _a.SvgComponent, PathComponent = _a.PathComponent, props = __rest(_a, ["iconSet", "icon", "size", "disableFill", "removeInlineStyle", "SvgComponent", "PathComponent"]);
+    if (!iconSet || !icon)
+        return null;
+    var currentIcon = iconSet.icons.find(function (item) { return item.properties.name === icon; });
+    if (!currentIcon)
+        return null;
+    if (size) {
+        style.width = size;
+        style.height = size;
+    }
+    if (props.native) {
+        style.display = "flex";
+        style.flexDirection = "row";
+        style.flexWrap = "wrap";
+    }
+    props.style = __assign(__assign({}, (removeInlineStyle ? {} : style)), (props.style || {}));
+    var _b = currentIcon.icon.width, width = _b === void 0 ? "1024" : _b;
+    props.viewBox = "0 0 " + width + " 1024";
+    var paths = currentIcon.icon.paths.map(function (path, index) {
+        var pathProps = __assign({ d: path, key: icon + index }, (!disableFill ? currentIcon.icon.attrs[index] : {}));
+        return PathComponent
+            ? react_1.createElement(PathComponent, pathProps)
+            : react_1.createElement("path", pathProps);
+    });
+    return SvgComponent
+        ? react_1.createElement(SvgComponent, props, paths)
+        : react_1.createElement("svg", props, paths);
+};
+var iconList = function (iconSet) {
+    if (iconSet && Array.isArray(iconSet.icons)) {
+        return iconSet.icons.map(function (icon) { return icon.properties.name; });
+    }
+    return null;
+};
+exports.iconList = iconList;
+exports.default = IcoMoon;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react-jsx-runtime.development.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/react/cjs/react-jsx-runtime.development.js ***!
@@ -31302,6 +31427,16 @@ if (false) {} else {
 }
 
 
+/***/ }),
+
+/***/ "./src/js/selection.json":
+/*!*******************************!*\
+  !*** ./src/js/selection.json ***!
+  \*******************************/
+/***/ ((module) => {
+
+module.exports = JSON.parse('{"IcoMoonType":"selection","icons":[{"icon":{"paths":["M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"],"width":1024,"attrs":[],"isMulticolor":false,"isMulticolor2":false,"tags":["chevron-down"],"defaultCode":61560,"grid":14},"attrs":[],"properties":{"name":"arrow-down","id":114,"order":83,"prevSize":28,"code":61560},"setIdx":0,"setId":4,"iconIdx":114},{"icon":{"paths":["M1024 512c0 282.77-229.23 512-512 512s-512-229.23-512-512c0-282.77 229.23-512 512-512s512 229.23 512 512z","M512 256c28.277 0 51.2 22.923 51.2 51.2v256c0 28.277-22.923 51.2-51.2 51.2s-51.2-22.923-51.2-51.2v-256c0-28.277 22.923-51.2 51.2-51.2z","M512 665.6c28.277 0 51.2 22.923 51.2 51.2s-22.923 51.2-51.2 51.2c-28.277 0-51.2-22.923-51.2-51.2s22.923-51.2 51.2-51.2z"],"attrs":[{"fill":"rgb(250, 89, 89)"},{"fill":"rgb(255, 255, 255)"},{"fill":"rgb(255, 255, 255)"}],"isMulticolor":true,"isMulticolor2":false,"grid":0,"tags":["icon-error"],"colorPermutations":{"250898912552552551821032231":[{"f":1},{"f":2},{"f":2}]}},"attrs":[{"fill":"rgb(250, 89, 89)"},{"fill":"rgb(255, 255, 255)"},{"fill":"rgb(255, 255, 255)"}],"properties":{"order":84,"id":2,"name":"error","prevSize":32,"code":59648,"codes":[59648,59649,59650]},"setIdx":1,"setId":3,"iconIdx":1},{"icon":{"paths":["M967.467 0h-910.933c-31.232 0-56.533 25.301-56.533 56.533v910.976c0 31.189 25.301 56.491 56.533 56.491h490.453v-396.544h-133.461v-154.539h133.461v-113.963c0-132.267 80.768-204.288 198.784-204.288 56.533 0 105.088 4.224 119.253 6.101v138.24l-81.835 0.043c-64.171 0-76.587 30.507-76.587 75.221v98.688h153.045l-19.925 154.539h-133.12v396.501h260.949c31.147 0 56.448-25.301 56.448-56.533v-910.933c0-31.232-25.301-56.533-56.533-56.533z"],"attrs":[{"fill":"rgb(255, 255, 255)"}],"isMulticolor":false,"isMulticolor2":false,"grid":0,"tags":["icon-facebook"],"colorPermutations":{"250898912552552551821032231":[{"f":2}]}},"attrs":[{"fill":"rgb(255, 255, 255)"}],"properties":{"order":85,"id":1,"name":"fb","prevSize":32,"code":59651},"setIdx":1,"setId":3,"iconIdx":2},{"icon":{"paths":["M1228.8 130.918c-42.164 19.211-91.075 33.184-142.369 39.439l-2.424 0.241c52.148-31.551 91.347-80.028 110.339-137.684l0.509-1.784c-46.085 27.828-99.722 49.054-156.86 60.635l-3.242 0.549c-46.043-49.057-111.295-79.616-183.684-79.616-0.116 0-0.231 0-0.347 0l0.018-0c-162.765 0-282.368 151.859-245.606 309.504-209.996-10.828-394.712-110.61-518.564-262.094l-1.014-1.279c-21.458 36.335-34.136 80.066-34.136 126.758 0 87.1 44.116 163.896 111.222 209.263l0.892 0.568c-42.098-1.369-81.222-12.895-115.377-32.19l1.252 0.65c-2.765 116.787 80.947 226.048 202.189 250.368-19.859 5.609-42.666 8.833-66.225 8.833-16.852 0-33.319-1.65-49.248-4.797l1.604 0.264c33.175 100.954 125.668 172.947 235.274 175.049l0.246 0.004c-85.259 67.366-194.298 108.060-312.842 108.060-21.289 0-42.272-1.312-62.872-3.861l2.466 0.249c109.046 71.019 242.489 113.255 385.797 113.255 0.232 0 0.464-0 0.696-0l-0.036 0c468.070 0 732.518-395.315 716.544-749.875 49.526-36.101 91.265-79.34 124.643-128.696l1.155-1.812z"],"attrs":[{"fill":"rgb(255, 255, 255)"}],"width":1229,"isMulticolor":false,"isMulticolor2":false,"grid":0,"tags":["icon-twitter"],"colorPermutations":{"250898912552552551821032231":[{"f":2}]}},"attrs":[{"fill":"rgb(255, 255, 255)"}],"properties":{"order":86,"id":0,"name":"tt","prevSize":32,"code":59652},"setIdx":1,"setId":3,"iconIdx":3}],"height":1024,"metadata":{"name":"icons"},"preferences":{"showGlyphs":true,"showQuickUse":true,"showQuickUse2":true,"showSVGs":true,"fontPref":{"prefix":"i-","metadata":{"fontFamily":"icons","majorVersion":1,"minorVersion":0},"metrics":{"emSize":1024,"baseline":6.25,"whitespace":50},"embed":false,"showSelector":true,"selector":"i","classSelector":".icon","showMetrics":false,"showMetadata":false,"cssVars":false,"cssVarsFormat":"scss","noie8":true,"ie7":false,"showVersion":false,"flutter":false,"includeMetadata":false,"autoHost":true},"imagePref":{"prefix":"icon-","png":true,"useClassSelector":true,"color":0,"bgColor":16777215,"classSelector":".icon","name":"icomoon","height":32,"columns":16,"margin":16,"minifyJs":true},"historySize":50,"showCodes":true,"gridSize":16,"quickUsageToken":{"UntitledProject":"YWUwNDNmZDBkYTA4NTk4ZTY5MGRhZjU2Yzc4MDQ4NzYjMSMxNjE3NDY0NjcxIyMj"}}}');
+
 /***/ })
 
 /******/ 	});
@@ -31324,7 +31459,7 @@ if (false) {} else {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -31362,6 +31497,18 @@ if (false) {} else {
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
 /******/ 		};
 /******/ 	})();
 /******/ 	

@@ -1,3 +1,5 @@
+import Icon from './Icon';
+
 const MobileNav = () => {
     return ( 
         <nav className="header__nav mobile-nav">
@@ -16,10 +18,14 @@ const MobileNav = () => {
                         <a href="#" className="mobile-nav__link">Contact</a>
                     </li>
                 </ul>
-                <a href="#" className="mobile-nav__cta">Login</a>
+                <a href="#" className="mobile-nav__cta btn--login-mobile">Login</a>
                 <div className="mobile-nav__socials">
-                    <a href="#" className="mobile-nav__socials-link" aria-label="Follow us on Facebook"></a>
-                    <a href="#" className="mobile-nav__socials-link" aria-label="Follow us on Twitter"></a>
+                    <a href="#" className="mobile-nav__socials-link" aria-label="Follow us on Facebook">
+                        <Icon name="fb" size={25} color="white" />
+                    </a>
+                    <a href="#" className="mobile-nav__socials-link" aria-label="Follow us on Twitter">
+                        <Icon name="tt" size={25} color="white" />
+                    </a>
                 </div>
             </div>
         </nav>
