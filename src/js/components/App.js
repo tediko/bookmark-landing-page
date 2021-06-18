@@ -1,12 +1,11 @@
-import Header from './Header';
+import KeyVisual from './KeyVisual';
 
 function App() {
     return (
         <div className="main-container">
-            <Header />
+            <KeyVisual />
         </div>
     );
 }
   
-export default App;
-  
+export default App;  
