@@ -2,4 +2,123 @@
 
 .mobile-nav {
     $root: &;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        &.is-active {
+            #{$root}__menu-bars {
+                transform: rotate(225deg);
+                transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s,
+                            background-color 0.2s ease-in;
+                background-color: $c-white;
+
+                &::before {
+                    top: 0;
+                    opacity: 0;
+                    background-color: $c-white;
+                    transition: top 0.1s ease-out, 
+                                opacity 0.1s ease-out 0.12s,
+                                background-color 0.2s ease-in;
+                }
+
+                &::after {
+                    bottom: 0;
+                    transform: rotate(-90deg);
+                    background-color: $c-white;
+                    transition: bottom 0.1s ease-out, 
+                                transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s,
+                                background-color 0.2s ease-in;
+                }
+            }
+        }
+    }
+
+    &__menu-bars {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: $c-blue-dark;
+        transition: transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19),
+                    background-color 0.2s ease-in;
+        
+        &::before, 
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background: $c-blue-dark;
+        }
+
+        &::before {
+            top: 6px;
+            transition: top 0.1s ease-in 0.25s,
+                        opacity 0.1s ease-in,
+                        background-color 0.2s ease-in;
+        }
+
+        &::after {
+            bottom: 6px;
+            transition: bottom 0.1s ease-in 0.25s,
+                        transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19),
+                        background-color 0.2s ease-in;
+        }
+    }
+
+    &__wrapper {
+        visibility: hidden;
+        position: absolute;
+        display: grid;
+        grid-template-rows: max-content;
+        top: 105px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0 32px;
+        height: 77vh;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    &__item {
+        text-transform: uppercase;
+        border-top: 1px solid $c-blue-grayish;
+        padding: 20px 0;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        color: $c-white;
+
+        &:last-child {
+            border-bottom: 1px solid $c-blue-grayish;
+        }
+    }
+
+    &__cta {
+        align-self: start;
+        margin-top: 26px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 40px;
+        align-self: end;
+        justify-self: center;
+    }
+
+    &__socials-link {
+        display: flex;
+    }
 }
