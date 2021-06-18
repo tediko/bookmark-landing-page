@@ -53,6 +53,13 @@ var DesktopNav = function DesktopNav() {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
           href: "#",
           className: "desktop-nav__link",
+          children: "Features"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
+        className: "desktop-nav__item",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+          href: "#",
+          className: "desktop-nav__link",
           children: "Pricing"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
@@ -61,13 +68,6 @@ var DesktopNav = function DesktopNav() {
           href: "#",
           className: "desktop-nav__link",
           children: "Contact"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-        className: "desktop-nav__item",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-          href: "#",
-          className: "desktop-nav__link",
-          children: "Login"
         })
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
@@ -115,7 +115,7 @@ var Header = function Header() {
           alt: "Bookmark - Home page",
           className: "header__logo-img"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_MobileNav__WEBPACK_IMPORTED_MODULE_0__.default, {})]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_DesktopNav__WEBPACK_IMPORTED_MODULE_1__.default, {})]
     })
   });
 };
