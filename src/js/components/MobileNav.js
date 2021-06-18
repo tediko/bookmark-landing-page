@@ -7,13 +7,13 @@ const MobileNav = () => {
             <div className="mobile-nav__wrapper">
                 <ul className="mobile-nav__list" id="nav-list">
                     <li className="mobile-nav__item">
+                        <a href="#" className="mobile-nav__link">Features</a>
+                    </li>
+                    <li className="mobile-nav__item">
                         <a href="#" className="mobile-nav__link">Pricing</a>
                     </li>
                     <li className="mobile-nav__item">
                         <a href="#" className="mobile-nav__link">Contact</a>
-                    </li>
-                    <li className="mobile-nav__item">
-                        <a href="#" className="mobile-nav__link">Login</a>
                     </li>
                 </ul>
                 <a href="#" className="mobile-nav__cta">Login</a>
