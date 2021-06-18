@@ -1,0 +1,20 @@
+@use '../utilities/' as *;
+
+.btn {
+    $root: &;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &--login-mobile {
+        @extend #{$root};
+        padding: 9px 0;
+        border: 2px solid white;
+        border-radius: 7px;
+        font-size: 1.4rem;
+        color: $c-white;
+        text-transform: uppercase;
+    }
+}
