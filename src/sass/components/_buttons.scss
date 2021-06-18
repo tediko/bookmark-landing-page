@@ -8,7 +8,12 @@
     align-items: center;
     cursor: pointer;
     color: $c-white;
-
+    border: none;
+    background-color: transparent;
+    font-family: $ff-primary;
+    font-weight: 500;
+    font-size: 0.85rem;
+    
     &--login-mobile {
         @extend #{$root};
         padding: 9px 0;
@@ -25,9 +30,26 @@
         border: 1px solid darken($c-red-soft, 20);
         border-radius: 5px;
         text-transform: uppercase;
-        font-weight: 500;
-        font-size: 0.85rem;
         letter-spacing: 0.07rem;
-        box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.12);
+        box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &--intro {
+        @extend #{$root};
+        padding: 16px 18px;
+        color: $c-white;
+        border-radius: 5px;
+        letter-spacing: 0.03em;
+    }
+
+    &--blue {
+        background-color: $c-blue-soft;
+        box-shadow: 0 5px 6px 0 transparentize($c-blue-soft, 0.8);
+    }
+
+    &--gray {
+        background-color: lighten($c-blue-grayish, 38);
+        color: lighten($c-blue-dark, 20);
+        box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.12);
     }
 }
