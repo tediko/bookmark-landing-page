@@ -2,4 +2,17 @@
 
 .header {
     $root: &;
+    position: absolute;
+    width: 100%;
+    padding: 40px 32px 32px 32px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+    }
 }
