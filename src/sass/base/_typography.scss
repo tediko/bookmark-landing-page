@@ -8,3 +8,9 @@ body {
     font-size: 1.125rem;
     font-family: $ff-primary;
 }
+
+/* Anchor elements */
+a {
+    text-decoration: none;
+    color: inherit;
+}
