@@ -12,7 +12,7 @@ const DesktopNav = () => {
                     <a href="#" className="desktop-nav__link">Contact</a>
                 </li>
             </ul>
-            <a href="#" className="desktop-nav__cta">Login</a>
+            <a href="#" className="desktop-nav__cta btn--login-desktop">Login</a>
         </nav>
      );
 }
