@@ -6,3 +6,34 @@
     max-width: 1110px;
     margin: 0 auto;
 }
+
+/* Headings */
+.heading {
+    color: $c-blue-dark;
+
+    &--xxl {
+        @extend .heading;
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+        line-height: 1.3em;
+
+        @include breakpoint(lg) {
+            line-height: 1.15em;
+            letter-spacing: 0.015em;
+        }
+    }
+}
+
+/* Paragraphs */
+.paragraph {
+    color: $c-blue-grayish;
+
+    &--l {
+        @extend .paragraph;
+        font-size: clamp(0.94rem, 2.3vw, 1.12rem);
+        line-height: 1.67em;
+
+        @include breakpoint(lg) {
+            line-height: 1.55em;
+        }
+    }
+}
