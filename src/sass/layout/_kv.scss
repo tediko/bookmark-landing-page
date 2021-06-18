@@ -1,0 +1,5 @@
+@use '../utilities/' as *;
+
+.kv {
+    $root: &;
+}
