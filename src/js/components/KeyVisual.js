@@ -5,6 +5,7 @@ const KeyVisual = () => {
         <section className="kv">
             <Header />
             <div className="kv__container container">
+                <div className="kv__illustration"></div>
                 <div className="kv__intro">
                     <h1 className="kv__title heading--xxl">A Simple Bookmark Manager</h1>
                     <p className="kv__text paragraph--l">A clean and simple interface to organize your favourite websites. Open a new 
@@ -14,7 +15,6 @@ const KeyVisual = () => {
                         <button className="kv__cta btn--intro btn--gray" aria-label="Add extension to Firefox">Get it on Firefox</button>
                     </div>
                 </div>
-                <div className="kv__illustration"></div>
             </div>
         </section>
      );
