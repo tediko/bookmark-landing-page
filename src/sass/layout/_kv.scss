@@ -3,14 +3,26 @@
 .kv {
     $root: &;
     overflow: hidden;
+
+    @include breakpoint(md) {
+        padding: 0 24px;
+    }
     
     &__container {
         padding: 132px 0 155px 0;
+
+        @include breakpoint(md) {
+            display: flex;
+        }
+
+        @include breakpoint(lg) {
+            padding-bottom: 215px;
+        }
     }
 
     &__illustration {
         position: relative;
-        background-image: url(/images/illustration-hero.svg);
+        background-image: url('/images/illustration-hero.svg');
         background-size: 94%;
         background-repeat: no-repeat;
         background-position: center;
@@ -19,6 +31,24 @@
         max-width: 600px;
         max-height: 426px;
         margin: 0 auto;
+
+        @include breakpoint(md) {
+            order: 1;
+            width: 50%;
+            background: none;
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: 62px;
+                left: 11px;
+                background-image: url("/images/illustration-hero.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 118%;
+                height: 118%;
+            }
+        }
 
         &::before {
             position: absolute;
@@ -29,9 +59,23 @@
             height: 54vw;
             max-height: 324px;
             background-color: $c-blue-soft;
-            border-radius: 50%;
             border-radius: 88px 0 0 88px;
             z-index: -1;
+
+            @include breakpoint(md) {
+                top: clamp(158px, 4vw, 90px);
+                left: 13vw;
+                height: 30vw;
+                border-radius: 88px 0 0 167px;
+            }
+
+            @include breakpoint(lg) {
+                top: clamp(77px, 15vw, 204px);
+                left: 14.5vw;
+                width: 100vw;
+                height: 54vw;
+                max-height: 352px;
+            }
         }
     }
 
@@ -42,15 +86,37 @@
         padding: 0 32px;
         margin-top: 53px;
         text-align: center;
+
+        @include breakpoint(md) {
+            order: 0;
+            align-items: flex-start;
+            justify-content: center;
+            width: 50%;
+            text-align: left;
+            padding: 0;
+        }
+
+        @include breakpoint(lg) {
+            margin-top: 141px;
+        }
     }
 
     &__title {
         max-width: 380px;
+
+        @include breakpoint(md) {
+            max-width: unset;
+        }
     }
 
     &__text {
         margin-top: 19px;
         max-width: 530px;
+
+        @include breakpoint(lg) {
+            margin-top: 25px;
+            max-width: 500px;
+        }
     }
 
     &__cta-wrapper {
@@ -59,5 +125,12 @@
         margin-top: 30px;
         width: 100%;
         max-width: 360px;
+
+        @include breakpoint(lg) {
+            justify-content: flex-start;
+            gap: 16px;
+            max-width: unset;
+            margin-top: 33px;
+        }
     }
 }
