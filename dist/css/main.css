@@ -175,11 +175,11 @@ a {
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: clamp(2.5rem, 4vw, 3.125rem);
 }
 .desktop-nav__list {
   display: flex;
-  gap: 45px;
+  gap: clamp(2.1875rem, 4vw, 2.8125rem);
 }
 .desktop-nav__item {
   text-transform: uppercase;
