@@ -2,4 +2,62 @@
 
 .kv {
     $root: &;
+    overflow: hidden;
+    
+    &__container {
+        padding: 132px 0 155px 0;
+    }
+
+    &__illustration {
+        position: relative;
+        background-image: url(/images/illustration-hero.svg);
+        background-size: 94%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 71vw;
+        max-width: 600px;
+        max-height: 426px;
+        margin: 0 auto;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: clamp(64px, 15vw, 90px);
+            left: 21vw;
+            width: 100vw;
+            height: 54vw;
+            max-height: 324px;
+            background-color: $c-blue-soft;
+            border-radius: 50%;
+            border-radius: 88px 0 0 88px;
+            z-index: -1;
+        }
+    }
+
+    &__intro {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        padding: 0 32px;
+        margin-top: 53px;
+        text-align: center;
+    }
+
+    &__title {
+        max-width: 380px;
+    }
+
+    &__text {
+        margin-top: 19px;
+        max-width: 530px;
+    }
+
+    &__cta-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 360px;
+    }
 }
