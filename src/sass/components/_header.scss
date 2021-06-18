@@ -6,6 +6,10 @@
     width: 100%;
     padding: 40px 32px 32px 32px;
 
+    @include breakpoint(md) {
+        padding: 48px 32px 32px 32px;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -14,5 +18,9 @@
 
     &__logo {
         display: flex;
+
+        @include breakpoint(md) {
+            margin-left: 6px;
+        }
     }
 }
