@@ -2,4 +2,19 @@
 
 .desktop-nav {
     $root: &;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &__list {
+        display: flex;
+        gap: 45px;
+    }
+
+    &__item {
+        text-transform: uppercase;
+        font-size: 0.83rem;
+        letter-spacing: 0.08rem;
+        color: $c-blue-dark;
+    }
 }
