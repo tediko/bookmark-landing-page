@@ -72,7 +72,7 @@ var DesktopNav = function DesktopNav() {
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
       href: "#",
-      className: "desktop-nav__cta",
+      className: "desktop-nav__cta btn--login-desktop",
       children: "Login"
     })]
   });
@@ -106,7 +106,7 @@ var Header = function Header() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("header", {
     className: "header",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-      className: "header__container",
+      className: "header__container container",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
         href: "#",
         className: "header__logo",
@@ -115,7 +115,7 @@ var Header = function Header() {
           alt: "Bookmark - Home page",
           className: "header__logo-img"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_DesktopNav__WEBPACK_IMPORTED_MODULE_1__.default, {})]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_MobileNav__WEBPACK_IMPORTED_MODULE_0__.default, {})]
     })
   });
 };
