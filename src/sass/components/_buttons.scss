@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: $c-white;
 
     &--login-mobile {
         @extend #{$root};
@@ -14,7 +15,19 @@
         border: 2px solid white;
         border-radius: 7px;
         font-size: 1.4rem;
-        color: $c-white;
         text-transform: uppercase;
+    }
+
+    &--login-desktop {
+        @extend #{$root};
+        padding: 11px 31px;
+        background-color: $c-red-soft;
+        border: 1px solid darken($c-red-soft, 20);
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.85rem;
+        letter-spacing: 0.07rem;
+        box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.12);
     }
 }
