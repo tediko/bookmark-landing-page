@@ -40,6 +40,10 @@
         color: $c-white;
         border-radius: 5px;
         letter-spacing: 0.03em;
+
+        @include breakpoint(md) {
+            padding: 16px 25px;
+        }
     }
 
     &--blue {
