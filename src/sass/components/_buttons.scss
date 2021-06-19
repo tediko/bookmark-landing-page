@@ -54,6 +54,15 @@
         color: $c-white;
     }
 
+    &--install {
+        @extend #{$root};
+        padding: 16px 36px;
+        color: $c-white;
+        border-radius: 5px;
+        font-size: 0.89rem;
+        letter-spacing: 0.01em
+    }
+
     &--blue {
         background-color: $c-blue-soft;
         box-shadow: 0 5px 6px 0 transparentize($c-blue-soft, 0.8);
