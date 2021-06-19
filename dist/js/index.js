@@ -14,16 +14,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _KeyVisual__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./KeyVisual */ "./src/js/components/KeyVisual.js");
 /* harmony import */ var _Features__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Features */ "./src/js/components/Features.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Extensions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Extensions */ "./src/js/components/Extensions.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     className: "main-container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_KeyVisual__WEBPACK_IMPORTED_MODULE_0__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Features__WEBPACK_IMPORTED_MODULE_1__.default, {})]
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_KeyVisual__WEBPACK_IMPORTED_MODULE_0__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Features__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Extensions__WEBPACK_IMPORTED_MODULE_2__.default, {})]
   });
 }
 
@@ -112,6 +114,105 @@ var DesktopNav = function DesktopNav() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DesktopNav);
+
+/***/ }),
+
+/***/ "./src/js/components/Extensions.js":
+/*!*****************************************!*\
+  !*** ./src/js/components/Extensions.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button */ "./src/js/components/Button.js");
+/* harmony import */ var _assets_img_logo_chrome_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/img/logo-chrome.svg */ "./src/assets/img/logo-chrome.svg");
+/* harmony import */ var _assets_img_logo_firefox_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/img/logo-firefox.svg */ "./src/assets/img/logo-firefox.svg");
+/* harmony import */ var _assets_img_logo_opera_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/img/logo-opera.svg */ "./src/assets/img/logo-opera.svg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+var Extensions = function Extensions() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {
+    className: "extensions",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "extensions__container container",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+        className: "extensions__title heading--xl",
+        children: "Download the extension"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+        className: "extensions__text paragraph--l",
+        children: "We\u2019ve got more browsers in the pipeline. Please do let us know if you\u2019ve got a favourite you\u2019d like us to prioritize."
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "extensions__card-wrapper",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "extensions__card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+            src: _assets_img_logo_chrome_svg__WEBPACK_IMPORTED_MODULE_1__.default,
+            alt: "",
+            className: "extensions__card-img"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
+            className: "extensions__card-title heading--l",
+            children: "Add to Chrome"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            className: "extensions__card-text paragraph--l",
+            children: "Minimum version 62"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+            className: "extensions__card-cta",
+            name: "install",
+            color: "blue",
+            text: "Add & Install Extension"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "extensions__card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+            src: _assets_img_logo_firefox_svg__WEBPACK_IMPORTED_MODULE_2__.default,
+            alt: "",
+            className: "extensions__card-img"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
+            className: "extensions__card-title heading--l",
+            children: "Add to Firefox"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            className: "extensions__card-text paragraph--l",
+            children: "Minimum version 55"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+            className: "extensions__card-cta",
+            name: "install",
+            color: "blue",
+            text: "Add & Install Extension"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "extensions__card",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+            src: _assets_img_logo_opera_svg__WEBPACK_IMPORTED_MODULE_3__.default,
+            alt: "",
+            className: "extensions__card-img"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
+            className: "extensions__card-title heading--l",
+            children: "Add to Opera"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+            className: "extensions__card-text paragraph--l",
+            children: "Minimum version 46"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+            className: "extensions__card-cta",
+            name: "install",
+            color: "blue",
+            text: "Add & Install Extension"
+          })]
+        })]
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Extensions);
 
 /***/ }),
 
@@ -454,6 +555,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-bookmark.svg?d426263a94701e122e7d14b0c6eee7ce");
+
+/***/ }),
+
+/***/ "./src/assets/img/logo-chrome.svg":
+/*!****************************************!*\
+  !*** ./src/assets/img/logo-chrome.svg ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-chrome.svg?a42815a014c452e4d95851f7a8daf95b");
+
+/***/ }),
+
+/***/ "./src/assets/img/logo-firefox.svg":
+/*!*****************************************!*\
+  !*** ./src/assets/img/logo-firefox.svg ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-firefox.svg?a9e6ca53e8cfd641e556b7afb1f0085f");
+
+/***/ }),
+
+/***/ "./src/assets/img/logo-opera.svg":
+/*!***************************************!*\
+  !*** ./src/assets/img/logo-opera.svg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo-opera.svg?ff14e4763945338fe002017c72e7e597");
 
 /***/ }),
 
