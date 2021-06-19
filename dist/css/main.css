@@ -62,7 +62,7 @@ a {
 }
 
 /* Headings */
-.heading, .heading--xl, .heading--xxl {
+.heading, .heading--l, .heading--xl, .heading--xxl {
   color: #252b46;
   font-weight: 500;
 }
@@ -84,6 +84,11 @@ a {
   .heading--xl {
     letter-spacing: 0.02em;
   }
+}
+.heading--l {
+  font-size: 1.26rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 /* Paragraphs */
@@ -235,7 +240,7 @@ a {
   color: #252b46;
 }
 
-.btn, .btn--info, .btn--intro, .btn--login-desktop, .btn--login-mobile {
+.btn, .btn--install, .btn--info, .btn--intro, .btn--login-desktop, .btn--login-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,6 +284,13 @@ a {
   padding: 16px 25px;
   border-radius: 5px;
   color: white;
+}
+.btn--install {
+  padding: 16px 36px;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.89rem;
+  letter-spacing: 0.01em;
 }
 .btn--blue {
   background-color: #5368df;
@@ -440,7 +452,12 @@ a {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding-bottom: 155px;
+  padding-bottom: 153px;
+}
+@media (min-width: 1024px) {
+  .features__container {
+    padding-bottom: 206px;
+  }
 }
 .features__text {
   margin-top: 13px;
@@ -678,6 +695,52 @@ a {
     display: flex;
     margin-top: 33px;
   }
+}
+
+.extensions {
+  padding: 0 32px;
+}
+.extensions__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 140px;
+}
+.extensions__text {
+  text-align: center;
+  margin-top: 13px;
+  max-width: 550px;
+}
+.extensions__card-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  gap: 39px;
+  margin-top: 38px;
+  width: 90%;
+}
+.extensions__card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  max-width: 300px;
+  padding: 49px 0 24px 0;
+  margin: 0 auto;
+  border-radius: 14px;
+  box-shadow: 0px 15px 11px 1px rgba(0, 0, 0, 0.09);
+}
+.extensions__card-img {
+  width: 101px;
+}
+.extensions__card-title {
+  margin-top: 33px;
+}
+.extensions__card-text {
+  margin-top: 7px;
+}
+.extensions__card-cta {
+  margin-top: 62px;
 }
 
 /* Base */
