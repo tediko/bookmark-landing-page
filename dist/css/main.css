@@ -526,8 +526,9 @@ body {
 }
 .features__tab-text {
   text-align: center;
-  max-width: 310px;
+  max-width: 550px;
   margin-top: 13px;
+  padding: 0 32px;
 }
 .features__tab-cta {
   display: none;
