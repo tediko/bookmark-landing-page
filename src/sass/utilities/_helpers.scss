@@ -32,6 +32,13 @@
             letter-spacing: 0.02em;
         }
     }
+
+    &--l {
+        @extend .heading;
+        font-size: 1.26rem;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+    }
 }
 
 /* Paragraphs */
@@ -46,5 +53,12 @@
         @include breakpoint(lg) {
             line-height: 1.55em;
         }
+    }
+
+    &--xm {
+        @extend .paragraph;
+        font-size: 0.94rem;
+        line-height: 1.67em;
+
     }
 }
