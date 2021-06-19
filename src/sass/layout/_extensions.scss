@@ -15,6 +15,10 @@
         text-align: center;
         margin-top: 13px;
         max-width: 550px;
+
+        @include breakpoint(md) {
+            margin-top: 23px;
+        }
     }
 
     &__card-wrapper {
@@ -23,6 +27,19 @@
         gap: 39px;
         margin-top: 38px;
         width: 90%;
+
+        @include breakpoint(lg) {
+            flex-flow: row;
+            justify-content: space-between;
+            gap: 33px;
+            width: 90%;
+            height: 450px;
+            margin-top: 48px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 82.4%;
+        }
     }
 
     &__card {
@@ -32,10 +49,28 @@
         background-color: $c-white;
         width: 100%;
         max-width: 300px;
-        padding: 49px 0 24px 0;
+        padding: 50px 0 23px 0;
         margin: 0 auto;
         border-radius: 14px;
         box-shadow: 0px 15px 11px 1px rgba(0, 0, 0, 0.09);
+
+        @include breakpoint(lg) {
+            &:nth-of-type(1) {
+                align-self: flex-start;
+            }
+
+            &:nth-of-type(2) {
+                align-self: center;
+            }
+
+            &:nth-of-type(3) {
+                align-self: flex-end;
+            }
+        }
+    }
+
+    &__img-wrapper {
+        height: 110px;
     }
 
     &__card-img {
@@ -43,7 +78,7 @@
     }
 
     &__card-title {
-        margin-top: 33px;
+        margin-top: 22px;
     }
 
     &__card-text {
