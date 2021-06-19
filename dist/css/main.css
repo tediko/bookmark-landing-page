@@ -514,7 +514,7 @@ a {
     justify-content: center;
     align-items: center;
     border-top: unset;
-    width: 250px;
+    width: 100%;
   }
 }
 .features__tab-label::before {
