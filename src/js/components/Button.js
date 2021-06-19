@@ -1,6 +1,6 @@
-const button = ({ className, name, color, text }) => {
+const button = ({ className, name, color, text, label }) => {
     return ( 
-        <button className={`${className} btn--${name} btn--${color}`}>{text}</button>
+        <button className={`${className} btn--${name} btn--${color}`} aria-label={label ? label : null}>{text}</button>
      );
 }
  
