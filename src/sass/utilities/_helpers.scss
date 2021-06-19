@@ -10,15 +10,26 @@
 /* Headings */
 .heading {
     color: $c-blue-dark;
+    font-weight: 500;
 
     &--xxl {
         @extend .heading;
-        font-size: clamp(1.8rem, 4vw, 2.8rem);
-        line-height: 1.3em;
+        font-size: clamp(1.86rem, 4vw, 2.9rem);
+        line-height: 1.32em;
 
         @include breakpoint(lg) {
             line-height: 1.15em;
             letter-spacing: 0.015em;
+        }
+    }
+
+    &--xl {
+        @extend .heading;
+        font-size: clamp(1.43rem, 4vw, 1.9rem);
+        letter-spacing: 0.018em;
+
+        @include breakpoint(lg) {
+            letter-spacing: 0.02em;
         }
     }
 }
