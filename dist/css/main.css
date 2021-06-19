@@ -67,8 +67,8 @@ a {
   font-weight: 500;
 }
 .heading--xxl {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  line-height: 1.3em;
+  font-size: clamp(1.86rem, 4vw, 2.8rem);
+  line-height: 1.32em;
 }
 @media (min-width: 1024px) {
   .heading--xxl {
@@ -364,7 +364,7 @@ a {
   align-items: center;
   flex-flow: column;
   padding: 0 32px;
-  margin-top: 53px;
+  margin-top: 50px;
   text-align: center;
 }
 @media (min-width: 768px) {
