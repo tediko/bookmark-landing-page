@@ -67,7 +67,7 @@ a {
   font-weight: 500;
 }
 .heading--xxl {
-  font-size: clamp(1.86rem, 4vw, 2.8rem);
+  font-size: clamp(1.86rem, 4vw, 2.9rem);
   line-height: 1.32em;
 }
 @media (min-width: 1024px) {
@@ -396,7 +396,7 @@ a {
 }
 @media (min-width: 1024px) {
   .kv__text {
-    margin-top: 25px;
+    margin-top: 21px;
     max-width: 500px;
   }
 }
@@ -417,8 +417,8 @@ a {
 }
 
 body {
-  background-image: url("/mobile-design.jpg");
-  background-size: 375px;
+  background-image: url("/desktop-design.jpg");
+  background-size: 1440px auto;
   background-repeat: no-repeat;
   opacity: 0.5;
 }
