@@ -1,7 +1,7 @@
-const button = ({ className, name, color, text, label }) => {
+const Button = ({ className, name, color, text, label }) => {
     return ( 
         <button className={`${className} btn--${name} btn--${color}`} aria-label={label ? label : null}>{text}</button>
      );
 }
  
-export default button;
+export default Button;
