@@ -154,15 +154,18 @@ var Extensions = function Extensions() {
         className: "extensions__card-wrapper",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
           className: "extensions__card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-            src: _assets_img_logo_chrome_svg__WEBPACK_IMPORTED_MODULE_1__.default,
-            alt: "",
-            className: "extensions__card-img"
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "extensions__img-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+              src: _assets_img_logo_chrome_svg__WEBPACK_IMPORTED_MODULE_1__.default,
+              alt: "",
+              className: "extensions__card-img"
+            })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
             className: "extensions__card-title heading--l",
             children: "Add to Chrome"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-            className: "extensions__card-text paragraph--l",
+            className: "extensions__card-text paragraph--xm",
             children: "Minimum version 62"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
             className: "extensions__card-cta",
@@ -172,15 +175,18 @@ var Extensions = function Extensions() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
           className: "extensions__card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-            src: _assets_img_logo_firefox_svg__WEBPACK_IMPORTED_MODULE_2__.default,
-            alt: "",
-            className: "extensions__card-img"
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "extensions__img-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+              src: _assets_img_logo_firefox_svg__WEBPACK_IMPORTED_MODULE_2__.default,
+              alt: "",
+              className: "extensions__card-img"
+            })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
             className: "extensions__card-title heading--l",
             children: "Add to Firefox"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-            className: "extensions__card-text paragraph--l",
+            className: "extensions__card-text paragraph--xm",
             children: "Minimum version 55"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
             className: "extensions__card-cta",
@@ -190,15 +196,18 @@ var Extensions = function Extensions() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
           className: "extensions__card",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
-            src: _assets_img_logo_opera_svg__WEBPACK_IMPORTED_MODULE_3__.default,
-            alt: "",
-            className: "extensions__card-img"
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "extensions__img-wrapper",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("img", {
+              src: _assets_img_logo_opera_svg__WEBPACK_IMPORTED_MODULE_3__.default,
+              alt: "",
+              className: "extensions__card-img"
+            })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h3", {
             className: "extensions__card-title heading--l",
             children: "Add to Opera"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
-            className: "extensions__card-text paragraph--l",
+            className: "extensions__card-text paragraph--xm",
             children: "Minimum version 46"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
             className: "extensions__card-cta",

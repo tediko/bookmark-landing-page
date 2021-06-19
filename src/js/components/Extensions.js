@@ -12,21 +12,27 @@ const Extensions = () => {
                     got a favourite you’d like us to prioritize.</p>
                 <div className="extensions__card-wrapper">
                     <div className="extensions__card">
-                        <img src={chromeLogo} alt="" className="extensions__card-img" />
+                        <div className="extensions__img-wrapper">
+                            <img src={chromeLogo} alt="" className="extensions__card-img" />
+                        </div>
                         <h3 className="extensions__card-title heading--l">Add to Chrome</h3>
-                        <p className="extensions__card-text paragraph--l">Minimum version 62</p>
+                        <p className="extensions__card-text paragraph--xm">Minimum version 62</p>
                         <Button className="extensions__card-cta" name="install" color="blue" text="Add & Install Extension" />
                     </div>
                     <div className="extensions__card">
-                        <img src={firefoxLogo} alt="" className="extensions__card-img" />
+                        <div className="extensions__img-wrapper">
+                            <img src={firefoxLogo} alt="" className="extensions__card-img" />
+                        </div>
                         <h3 className="extensions__card-title heading--l">Add to Firefox</h3>
-                        <p className="extensions__card-text paragraph--l">Minimum version 55</p>
+                        <p className="extensions__card-text paragraph--xm">Minimum version 55</p>
                         <Button className="extensions__card-cta" name="install" color="blue" text="Add & Install Extension" />
                     </div>
                     <div className="extensions__card">
-                        <img src={operaLogo} alt="" className="extensions__card-img" />
+                        <div className="extensions__img-wrapper">
+                            <img src={operaLogo} alt="" className="extensions__card-img" />
+                        </div>
                         <h3 className="extensions__card-title heading--l">Add to Opera</h3>
-                        <p className="extensions__card-text paragraph--l">Minimum version 46</p>
+                        <p className="extensions__card-text paragraph--xm">Minimum version 46</p>
                         <Button className="extensions__card-cta" name="install" color="blue" text="Add & Install Extension" />
                     </div>
                 </div>
