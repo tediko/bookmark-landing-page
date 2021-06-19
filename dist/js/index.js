@@ -139,6 +139,8 @@ var Features = function Features() {
           htmlFor: "sharing",
           className: "features__tab-label",
           children: "Easy Sharing"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("span", {
+          className: "features__tab-bar"
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "features__tab-content",

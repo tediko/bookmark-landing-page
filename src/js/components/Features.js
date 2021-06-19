@@ -12,6 +12,7 @@ const Features = () => {
                     <label htmlFor="searching" className="features__tab-label">Speedy Searching</label>
                     <input type="radio" name="tab" id="sharing" className="features__tab-input" />
                     <label htmlFor="sharing" className="features__tab-label">Easy Sharing</label>
+                    <span className="features__tab-bar"></span>
                 </div>
                 <div className="features__tab-content">
                     <div className="features__tab-illustration"></div>
