@@ -1,4 +1,5 @@
 import Header from './Header';
+import Button from './Button';
 
 const KeyVisual = () => {
     return ( 
@@ -11,8 +12,8 @@ const KeyVisual = () => {
                     <p className="kv__text paragraph--l">A clean and simple interface to organize your favourite websites. Open a new 
                         browser tab and see your sites load instantly. Try it for free.</p>
                     <div className="kv__cta-wrapper">
-                        <button className="kv__cta btn--intro btn--blue" aria-label="Add extension to Chrome">Get it on Chrome</button>
-                        <button className="kv__cta btn--intro btn--gray" aria-label="Add extension to Firefox">Get it on Firefox</button>
+                        <Button className="kv__cta" name="intro" color="blue" text="Get it on Chrome" label="Add extension to Chrome"/>
+                        <Button className="kv__cta" name="intro" color="gray" text="Get it on Firefox" label="Add extension to Firefox"/>
                     </div>
                 </div>
             </div>
