@@ -46,6 +46,14 @@
         }
     }
 
+    &--info {
+        @extend #{$root};
+        align-self: flex-start;
+        padding: 16px 25px;
+        border-radius: 5px;
+        color: $c-white;
+    }
+
     &--blue {
         background-color: $c-blue-soft;
         box-shadow: 0 5px 6px 0 transparentize($c-blue-soft, 0.8);
