@@ -742,6 +742,7 @@ a {
   }
 }
 .extensions__card {
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -763,6 +764,17 @@ a {
   .extensions__card:nth-of-type(3) {
     align-self: flex-end;
   }
+}
+.extensions__card::before {
+  position: absolute;
+  content: "";
+  bottom: 90px;
+  left: 0;
+  background-image: url("/images/bg-dots.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 10px;
 }
 .extensions__img-wrapper {
   height: 110px;
