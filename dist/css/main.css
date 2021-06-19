@@ -608,7 +608,7 @@ a {
 }
 @media (min-width: 1024px) {
   .features__tab-illustration {
-    width: 100%;
+    width: 60%;
   }
 }
 .features__tab-illustration::before {
