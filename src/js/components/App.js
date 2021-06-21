@@ -1,6 +1,7 @@
 import KeyVisual from './KeyVisual';
 import Features from './Features';
 import Extensions from './Extensions';
+import Faq from './Faq';
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <KeyVisual />
             <Features />
             <Extensions />
+            <Faq />
         </div>
     );
 }
