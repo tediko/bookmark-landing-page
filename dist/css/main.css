@@ -91,13 +91,8 @@ a {
   letter-spacing: 0.01em;
 }
 .heading--xm {
-  font-size: 0.935rem;
+  font-size: clamp(0.935rem, 3vw, 1.126rem);
   font-weight: 400;
-}
-@media (min-width: 1024px) {
-  .heading--xm {
-    font-size: 1.126rem;
-  }
 }
 
 /* Paragraphs */

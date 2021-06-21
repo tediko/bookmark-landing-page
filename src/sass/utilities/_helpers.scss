@@ -39,6 +39,12 @@
         font-weight: 500;
         letter-spacing: 0.01em;
     }
+
+    &--xm {
+        @extend .heading;
+        font-size: clamp(0.935rem, 3vw, 1.126rem);
+        font-weight: 400;
+    }
 }
 
 /* Paragraphs */
