@@ -88,9 +88,21 @@
     }
 
     &__accordion-toggle {
-        display: none;
+        pointer-events: none;
         height: 0;
         opacity: 0;
+        transition: opacity 300ms ease-in-out,
+                    height 300ms 300ms ease-in-out;
+        
+        &.open {
+            pointer-events: all;
+            opacity: 1;
+            transition: height 300ms ease-in-out,
+                        opacity 300ms 300ms ease-in-out;
+        }
+    }
+
+    &__accordion-desc {
         margin-top: 30px;
     }
 
