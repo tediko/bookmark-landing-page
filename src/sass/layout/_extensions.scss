@@ -9,6 +9,10 @@
         flex-flow: column;
         align-items: center;
         margin-bottom: 140px;
+
+        @include breakpoint(lg) {
+            margin-bottom: 157px;
+        }
     }
 
     &__text {
