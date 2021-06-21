@@ -6,18 +6,20 @@ const FaqAccordionItem = ({ faq }) => {
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
     const refHeight = useRef();
+    const iconColors = {
+        blue: 'hsl(231, 69%, 60%)',
+        red: 'hsl(0, 94%, 66%)'
+    }
 
     useEffect(() => {
         setHeightEl(`${refHeight.current.scrollHeight}px`);
     }, [])
     
+    /**
+    * Function to change toggle state. 
+    */
     const toggleState = () => {
         setToggle(!toggle);
-    }
-
-    const iconColors = {
-        blue: 'hsl(231, 69%, 60%)',
-        red: 'hsl(0, 94%, 66%)'
     }
 
     return ( 

@@ -373,18 +373,21 @@ var FaqAccordionItem = function FaqAccordionItem(_ref) {
       setHeightEl = _useState4[1];
 
   var refHeight = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var iconColors = {
+    blue: 'hsl(231, 69%, 60%)',
+    red: 'hsl(0, 94%, 66%)'
+  };
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     setHeightEl("".concat(refHeight.current.scrollHeight, "px"));
   }, []);
+  /**
+  * Function to change toggle state. 
+  */
 
   var toggleState = function toggleState() {
     setToggle(!toggle);
   };
 
-  var iconColors = {
-    blue: 'hsl(231, 69%, 60%)',
-    red: 'hsl(0, 94%, 66%)'
-  };
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("li", {
     className: "faq__accordion-item",
     onClick: toggleState,
