@@ -94,6 +94,11 @@ a {
   font-size: 0.935rem;
   font-weight: 400;
 }
+@media (min-width: 1024px) {
+  .heading--xm {
+    font-size: 1.126rem;
+  }
+}
 
 /* Paragraphs */
 .paragraph, .paragraph--xm, .paragraph--l {
@@ -713,6 +718,11 @@ a {
   align-items: center;
   margin-bottom: 140px;
 }
+@media (min-width: 1024px) {
+  .extensions__container {
+    margin-bottom: 157px;
+  }
+}
 .extensions__text {
   text-align: center;
   margin-top: 13px;
@@ -805,14 +815,24 @@ a {
   align-items: center;
   margin-bottom: 123px;
 }
+@media (min-width: 1024px) {
+  .faq__container {
+    margin-bottom: 150px;
+  }
+}
 .faq__title {
   text-align: center;
   line-height: 1.3em;
 }
 .faq__text {
   text-align: center;
-  max-width: 550px;
+  max-width: 530px;
   margin-top: 17px;
+}
+@media (min-width: 1024px) {
+  .faq__text {
+    margin-top: 22px;
+  }
 }
 .faq__accordion-list {
   display: flex;
@@ -821,6 +841,13 @@ a {
   width: 100%;
   margin-top: 50px;
 }
+@media (min-width: 768px) {
+  .faq__accordion-list {
+    gap: 2px;
+    max-width: 542px;
+    margin-top: 57px;
+  }
+}
 .faq__accordion-item {
   display: flex;
   flex-flow: column;
@@ -828,8 +855,25 @@ a {
   border-bottom: 1px solid #e3e4e8;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .faq__accordion-item {
+    padding: 23px 0 19px 0;
+    transition: color 300ms ease-in-out;
+  }
+  .faq__accordion-item:hover .faq__accordion-question {
+    color: #fa5757;
+  }
+  .faq__accordion-item:first-of-type {
+    border-top: 1px solid #e3e4e8;
+  }
+}
 .faq__accordion-question {
   position: relative;
+}
+@media (min-width: 768px) {
+  .faq__accordion-question {
+    transition: color 300ms ease-in-out;
+  }
 }
 .faq__accordion-question::before {
   position: absolute;
@@ -837,6 +881,11 @@ a {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .faq__accordion-question::before {
+    right: 24px;
+  }
 }
 .faq__accordion-toggle {
   display: none;
@@ -847,6 +896,11 @@ a {
 .faq__cta {
   align-self: center;
   margin-top: 46px;
+}
+@media (min-width: 768px) {
+  .faq__cta {
+    margin-top: 54px;
+  }
 }
 
 /* Base */

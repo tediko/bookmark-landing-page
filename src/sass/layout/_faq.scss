@@ -9,6 +9,10 @@
         flex-flow: column;
         align-items: center;
         margin-bottom: 123px;
+
+        @include breakpoint(lg) {
+            margin-bottom: 150px;
+        }
     }
 
     &__title {
@@ -18,8 +22,12 @@
 
     &__text {
         text-align: center;
-        max-width: 550px;
+        max-width: 530px;
         margin-top: 17px;
+
+        @include breakpoint(lg) {
+            margin-top: 22px;
+        }
     }
 
     &__accordion-list {
@@ -28,6 +36,12 @@
         gap: 6px;
         width: 100%;
         margin-top: 50px;
+
+        @include breakpoint(md) {
+            gap: 2px;
+            max-width: 542px;
+            margin-top: 57px;
+        }
     }
 
     &__accordion-item {
@@ -36,10 +50,29 @@
         padding: 20px 0;
         border-bottom: 1px solid lighten($c-blue-grayish, 30);
         cursor: pointer;
+
+        @include breakpoint(md) {
+            padding: 23px 0 19px 0;
+            transition: color 300ms ease-in-out;
+
+            &:hover {
+                #{$root}__accordion-question {
+                    color: $c-red-soft;
+                }
+            }
+
+            &:first-of-type {
+                border-top: 1px solid lighten($c-blue-grayish, 30);
+            }
+        }
     }
 
     &__accordion-question {
         position: relative;
+
+        @include breakpoint(md) {
+            transition: color 300ms ease-in-out;
+        }
 
         &::before {
             position: absolute;
@@ -47,6 +80,10 @@
             top: 50%;
             right: 0;
             transform: translateY(-50%);
+
+            @include breakpoint(md) {
+                right: 24px;
+            }
         }
     }
 
@@ -60,5 +97,9 @@
     &__cta {
         align-self: center;
         margin-top: 46px;
+
+        @include breakpoint(md) {
+            margin-top: 54px;
+        }
     }
 }
