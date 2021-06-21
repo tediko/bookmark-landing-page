@@ -4,8 +4,8 @@ import FaqAccordionItem from "./FaqAccordionItem";
 const FaqAccordionList = ({ faqs }) => {
     return (
             <ul className="faq__accordion-list">
-                {faqs.map((faq, index) => (
-                    <FaqAccordionItem faq={faq} index={index} />
+                {faqs.map(faq => (
+                    <FaqAccordionItem faq={faq} key={faq.id} />
                 ))}
             </ul>
      );
