@@ -284,15 +284,19 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var Faq = function Faq() {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([{
+    id: 0,
     question: 'What is Bookmark?',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.'
   }, {
+    id: 1,
     question: 'How can I request a new browser?',
     answer: 'Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.'
   }, {
+    id: 2,
     question: 'Is there a mobile app?',
     answer: 'Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.'
   }, {
+    id: 3,
     question: 'What about other Chromium browsers?',
     answer: 'nteger condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.'
   }]),
@@ -340,13 +344,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var FaqAccordionItem = function FaqAccordionItem(_ref) {
-  var faq = _ref.faq,
-      index = _ref.index;
+  var faq = _ref.faq;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
     className: "faq__accordion-item",
-    onClick: function onClick() {
-      return open(index);
-    },
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h4", {
       className: "faq__accordion-question heading--xm",
       children: faq.question
@@ -357,7 +357,7 @@ var FaqAccordionItem = function FaqAccordionItem(_ref) {
         children: faq.answer
       })
     })]
-  }, index);
+  });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FaqAccordionItem);
@@ -385,11 +385,10 @@ var FaqAccordionList = function FaqAccordionList(_ref) {
   var faqs = _ref.faqs;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
     className: "faq__accordion-list",
-    children: faqs.map(function (faq, index) {
+    children: faqs.map(function (faq) {
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_FaqAccordionItem__WEBPACK_IMPORTED_MODULE_1__.default, {
-        faq: faq,
-        index: index
-      });
+        faq: faq
+      }, faq.id);
     })
   });
 };
