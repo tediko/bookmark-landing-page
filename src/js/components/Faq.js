@@ -21,7 +21,7 @@ const Faq = () => {
         {
             id: 3,
             question: 'What about other Chromium browsers?',
-            answer: 'nteger condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.',
+            answer: 'Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.',
         },
     ]);
 

@@ -298,7 +298,7 @@ var Faq = function Faq() {
   }, {
     id: 3,
     question: 'What about other Chromium browsers?',
-    answer: 'nteger condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.'
+    answer: 'Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.'
   }]),
       _useState2 = _slicedToArray(_useState, 2),
       faqs = _useState2[0],
