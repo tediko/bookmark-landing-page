@@ -864,22 +864,13 @@ a {
 }
 .faq__accordion-question {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .faq__accordion-question {
     transition: color 300ms ease-in-out;
-  }
-}
-.faq__accordion-question::before {
-  position: absolute;
-  content: url("/images/icon-arrow.svg");
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-@media (min-width: 768px) {
-  .faq__accordion-question::before {
-    right: 24px;
+    padding-right: 24px;
   }
 }
 .faq__accordion-toggle {

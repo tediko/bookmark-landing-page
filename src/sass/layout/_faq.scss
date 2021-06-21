@@ -69,21 +69,12 @@
 
     &__accordion-question {
         position: relative;
+        display: flex;
+        justify-content: space-between;
 
         @include breakpoint(md) {
             transition: color 300ms ease-in-out;
-        }
-
-        &::before {
-            position: absolute;
-            content: url('/images/icon-arrow.svg');
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-
-            @include breakpoint(md) {
-                right: 24px;
-            }
+            padding-right: 24px;
         }
     }
 
