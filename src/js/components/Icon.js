@@ -1,9 +1,9 @@
 import IcoMoon from 'react-icomoon';
 const iconSet = require("../selection.json");
 
-const Icon = ({ name, size, color }) => {
+const Icon = ({ name, size, color, customStyle }) => {
     return ( 
-        <IcoMoon iconSet={iconSet} disableFill="true" icon={name} size={size} color={color} />
+        <IcoMoon iconSet={iconSet} disableFill="true" icon={name} size={size} color={color} style={customStyle}/>
      );
 }
  
