@@ -7,6 +7,16 @@
     margin: 0 auto;
 }
 
+/* Visually hiding content */
+.sr-only {
+    position: absolute;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* Headings */
 .heading {
     color: $c-blue-dark;

@@ -61,6 +61,16 @@ a {
   margin: 0 auto;
 }
 
+/* Visually hiding content */
+.sr-only {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* Headings */
 .heading, .heading--xm, .heading--l, .heading--xl, .heading--xxl {
   color: #252b46;
