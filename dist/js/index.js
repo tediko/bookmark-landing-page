@@ -822,11 +822,13 @@ var SubscribeForm = function SubscribeForm() {
     action: "#",
     className: "subscribe__form",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
-      className: "subscribe__form-label",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-        type: "text",
-        className: "subscribe__form-input"
-      })
+      htmlFor: "email-sub",
+      className: "subscribe__form-label sr-only",
+      children: "Subscribe to newsletter!"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+      type: "text",
+      id: "email-sub",
+      className: "subscribe__form-input"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
       className: "subscribe__cta",
       name: "contact",
