@@ -638,7 +638,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _MobileNav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MobileNav */ "./src/js/components/MobileNav.js");
 /* harmony import */ var _DesktopNav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DesktopNav */ "./src/js/components/DesktopNav.js");
-/* harmony import */ var _assets_img_logo_bookmark_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/img/logo-bookmark.svg */ "./src/assets/img/logo-bookmark.svg");
+/* harmony import */ var _Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Logo */ "./src/js/components/Logo.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -651,14 +651,10 @@ var Header = function Header() {
     className: "header",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "header__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
-        href: "#",
-        className: "header__logo",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-          src: _assets_img_logo_bookmark_svg__WEBPACK_IMPORTED_MODULE_2__.default,
-          alt: "Bookmark - Home page",
-          className: "header__logo-img"
-        })
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Logo__WEBPACK_IMPORTED_MODULE_2__.default, {
+        className: "header",
+        color: "white",
+        altText: "Bookmark - Home page"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_MobileNav__WEBPACK_IMPORTED_MODULE_0__.default, {})]
     })
   });

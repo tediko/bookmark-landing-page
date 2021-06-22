@@ -1,14 +1,12 @@
 import MobileNav from './MobileNav';
 import DesktopNav from './DesktopNav';
-import logo from '../../assets/img/logo-bookmark.svg';
+import Logo from './Logo';
 
 const Header = () => {
     return ( 
         <header className="header">
             <div className="header__container container">
-                <a href="#" className="header__logo">
-                    <img src={logo} alt="Bookmark - Home page" className="header__logo-img" />
-                </a>
+                <Logo className="header" color="white" altText="Bookmark - Home page" />
                 <MobileNav />
             </div>
         </header>
