@@ -1,4 +1,4 @@
-import SubscribeForm from "./SubscribeForm";
+import SubscribeFormControler from "./SubscribeFormControler";
 
 const Subscribe = () => {
     return ( 
@@ -6,7 +6,7 @@ const Subscribe = () => {
             <div className="subscribe__container container">
                 <span className="subscribe__users">35,000+ already joined</span>
                 <h2 className="subscribe__title heading--xl heading--white">Stay up-to-date with what we’re doing</h2>
-                <SubscribeForm />
+                <SubscribeFormControler />
             </div>
         </section>
      );
