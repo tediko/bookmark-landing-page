@@ -6,14 +6,26 @@
     background-color: $c-blue-dark;
 
     &__container {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
         padding: 40px 0 37px 0;
+
+        @include breakpoint(md) {
+            grid-template-columns: max-content repeat(2, 1fr);
+            padding: 32px 0 26px 0;
+            column-gap: 64px;
+            justify-items: unset;
+            align-items: center;
+        }
     }
 
     &__nav {
         margin-top: 35px;
+
+        @include breakpoint(md) {
+            margin-top: 0;
+        }
     }
 
     &__nav-list {
@@ -21,6 +33,13 @@
         flex-flow: column;
         gap: 31px;
         text-align: center;
+
+        @include breakpoint(md) {
+            flex-flow: row;
+            text-align: left;
+            gap: 42px;
+            margin-top: -5px;
+        }
     }
 
     &__nav-item {
@@ -28,11 +47,20 @@
         font-size: 0.96rem;
         letter-spacing: 0.1em;
         color: $c-white;
+
+        @include breakpoint(md) {
+            font-size: 0.83rem;
+        }
     }
 
     &__socials {
         display: flex;
         gap: 38px;
         margin-top: 46px;
+
+        @include breakpoint(md) {
+            margin-top: 0;
+            justify-self: end;
+        }
     }
 }

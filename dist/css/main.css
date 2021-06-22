@@ -1103,13 +1103,29 @@ a {
   background-color: #252b46;
 }
 .footer__container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   padding: 40px 0 37px 0;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    grid-template-columns: -webkit-max-content repeat(2, 1fr);
+    grid-template-columns: max-content repeat(2, 1fr);
+    padding: 32px 0 26px 0;
+    -moz-column-gap: 64px;
+         column-gap: 64px;
+    justify-items: unset;
+    align-items: center;
+  }
 }
 .footer__nav {
   margin-top: 35px;
+}
+@media (min-width: 768px) {
+  .footer__nav {
+    margin-top: 0;
+  }
 }
 .footer__nav-list {
   display: flex;
@@ -1117,16 +1133,35 @@ a {
   gap: 31px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .footer__nav-list {
+    flex-flow: row;
+    text-align: left;
+    gap: 42px;
+    margin-top: -5px;
+  }
+}
 .footer__nav-item {
   text-transform: uppercase;
   font-size: 0.96rem;
   letter-spacing: 0.1em;
   color: white;
 }
+@media (min-width: 768px) {
+  .footer__nav-item {
+    font-size: 0.83rem;
+  }
+}
 .footer__socials {
   display: flex;
   gap: 38px;
   margin-top: 46px;
+}
+@media (min-width: 768px) {
+  .footer__socials {
+    margin-top: 0;
+    justify-self: end;
+  }
 }
 
 /* Base */
