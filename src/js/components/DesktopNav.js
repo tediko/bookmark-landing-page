@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const DesktopNav = () => {
     return ( 
         <nav className="header__nav desktop-nav">
@@ -12,7 +14,7 @@ const DesktopNav = () => {
                     <a href="#" className="desktop-nav__link">Contact</a>
                 </li>
             </ul>
-            <a href="#" className="desktop-nav__cta btn--login-desktop">Login</a>
+            <Button type="anchor" className="desktop-nav__cta" name="login-desktop" color="red" text="Login" />
         </nav>
      );
 }
