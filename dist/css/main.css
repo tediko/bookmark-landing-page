@@ -1098,6 +1098,37 @@ a {
   }
 }
 
+.footer {
+  padding: 0 32px;
+  background-color: #252b46;
+}
+.footer__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 40px 0 37px 0;
+}
+.footer__nav {
+  margin-top: 35px;
+}
+.footer__nav-list {
+  display: flex;
+  flex-flow: column;
+  gap: 31px;
+  text-align: center;
+}
+.footer__nav-item {
+  text-transform: uppercase;
+  font-size: 0.96rem;
+  letter-spacing: 0.1em;
+  color: white;
+}
+.footer__socials {
+  display: flex;
+  gap: 38px;
+  margin-top: 46px;
+}
+
 /* Base */
 /* Utilities */
 /* Components */
