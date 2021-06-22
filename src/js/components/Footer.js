@@ -16,8 +16,12 @@ const Footer = () => {
                     </ul>
                 </nav>
                 <div className="footer__socials">
-                    <Icon name="fb" size={25} color="white" />
-                    <Icon name="tt" size={25} color="white" />
+                    <a href="#" className="footer__socials-link" aria-label="Follow us on Facebook">
+                        <Icon name="fb" size={25} color="white" />
+                    </a>
+                    <a href="#" className="footer__socials-link" aria-label="Follow us on Twitter">
+                        <Icon name="tt" size={25} color="white" />
+                    </a>
                 </div>
             </div>
         </footer>
