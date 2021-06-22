@@ -1,2 +1,19 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+/* Subscribe section */
+@keyframes formError {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        height: 49px;
+    }
+    80% {
+        height: 90px;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        height: 80px;
+    }
+}
