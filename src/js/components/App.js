@@ -3,6 +3,7 @@ import Features from './Features';
 import Extensions from './Extensions';
 import Faq from './Faq';
 import Subscribe from './Subscribe';
+import Footer from './Footer';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Extensions />
             <Faq />
             <Subscribe />
+            <Footer />
         </div>
     );
 }
