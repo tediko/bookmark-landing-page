@@ -1,4 +1,5 @@
 import Icon from './Icon';
+import Button from './Button';
 
 const MobileNav = () => {
     return ( 
@@ -18,7 +19,7 @@ const MobileNav = () => {
                         <a href="#" className="mobile-nav__link">Contact</a>
                     </li>
                 </ul>
-                <a href="#" className="mobile-nav__cta btn--login-mobile">Login</a>
+                <Button type="anchor" className="mobile-nav__cta" name="login-mobile" color="transparent" text="Login" />
                 <div className="mobile-nav__socials">
                     <a href="#" className="mobile-nav__socials-link" aria-label="Follow us on Facebook">
                         <Icon name="fb" size={25} color="white" />
