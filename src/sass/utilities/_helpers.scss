@@ -55,6 +55,10 @@
         font-size: clamp(0.935rem, 3vw, 1.126rem);
         font-weight: 400;
     }
+
+    &--white {
+        color: $c-white;
+    }
 }
 
 /* Paragraphs */
