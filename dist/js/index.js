@@ -53,12 +53,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Button = function Button(_ref) {
-  var className = _ref.className,
+  var type = _ref.type,
+      className = _ref.className,
       name = _ref.name,
       color = _ref.color,
       text = _ref.text,
       label = _ref.label;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+  return type === 'anchor' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+    href: "#",
+    className: "".concat(className, " btn--").concat(name, " btn--").concat(color),
+    children: text
+  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
     className: "".concat(className, " btn--").concat(name, " btn--").concat(color),
     "aria-label": label ? label : null,
     children: text
