@@ -653,7 +653,7 @@ var Header = function Header() {
       className: "header__container container",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Logo__WEBPACK_IMPORTED_MODULE_2__.default, {
         className: "header",
-        color: "white",
+        color: "black",
         altText: "Bookmark - Home page"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_MobileNav__WEBPACK_IMPORTED_MODULE_0__.default, {})]
     })
