@@ -921,23 +921,47 @@ a {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 72px 0 60px 0;
+  padding: 70px 0 60px 0;
+}
+@media (min-width: 768px) {
+  .subscribe__container {
+    padding: 70px 0 74px 0;
+  }
 }
 .subscribe__users {
   text-transform: uppercase;
   color: white;
-  font-size: 0.83rem;
-  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  letter-spacing: 0.35em;
 }
 .subscribe__title {
   margin-top: 14px;
+  text-align: center;
+  max-width: 360px;
+}
+@media (min-width: 768px) {
+  .subscribe__title {
+    max-width: 460px;
+  }
+}
+@media (min-width: 1024px) {
+  .subscribe__title {
+    margin-top: 39px;
+    line-height: 1.24em;
+  }
 }
 .subscribe__form {
   display: flex;
-  flex-flow: column;
+  flex-flow: wrap;
   gap: 16px;
   width: 100%;
   margin-top: 33px;
+  max-width: 442px;
+}
+@media (min-width: 768px) {
+  .subscribe__form {
+    margin-top: 37px;
+  }
 }
 .subscribe__form-input {
   border: none;
@@ -946,6 +970,12 @@ a {
   padding-left: 20px;
   font-family: "Rubik";
   font-size: 0.9rem;
+  flex-basis: 100%;
+}
+@media (min-width: 480px) {
+  .subscribe__form-input {
+    flex-basis: 300px;
+  }
 }
 .subscribe__form-input::-moz-placeholder {
   color: #9194a1;
@@ -955,6 +985,9 @@ a {
 }
 .subscribe__form-input::placeholder {
   color: #9194a1;
+}
+.subscribe__form-cta {
+  flex: 1;
 }
 
 /* Base */

@@ -9,26 +9,46 @@
         display: flex;
         flex-flow: column;
         align-items: center;
-        padding: 72px 0 60px 0;
+        padding: 70px 0 60px 0;
+
+        @include breakpoint(md) {
+            padding: 70px 0 74px 0;
+        }
     }
 
     &__users {
         text-transform: uppercase;
         color: $c-white;
-        font-size: 0.83rem;
-        letter-spacing: 0.3em;
+        font-size: 0.85rem;
+        letter-spacing: 0.35em;
     }
 
     &__title {
         margin-top: 14px;
+        text-align: center;
+        max-width: 360px;
+
+        @include breakpoint(md) {
+            max-width: 460px;
+        }
+
+        @include breakpoint(lg) {
+            margin-top: 39px;
+            line-height: 1.24em;
+        }
     }
 
     &__form {
         display: flex;
-        flex-flow: column;
+        flex-flow: wrap;
         gap: 16px;
         width: 100%;
         margin-top: 33px;
+        max-width: 442px;
+
+        @include breakpoint(md) {
+            margin-top: 37px;
+        }
     }
 
     &__form-input {
@@ -38,9 +58,18 @@
         padding-left: 20px;
         font-family: "Rubik";
         font-size: 0.9rem;
+        flex-basis: 100%;
+
+        @include breakpoint(sm) {
+            flex-basis: 300px;
+        }
         
         &::placeholder {
             color: $c-blue-grayish;
         }
+    }
+
+    &__form-cta {
+        flex: 1;
     }
 }
