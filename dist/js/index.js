@@ -790,7 +790,7 @@ var Subscribe = function Subscribe() {
         className: "subscribe__users",
         children: "35,000+ already joined"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
-        className: "subscribe__title heading--xl",
+        className: "subscribe__title heading--xl heading--white",
         children: "Stay up-to-date with what we\u2019re doing"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_SubscribeForm__WEBPACK_IMPORTED_MODULE_0__.default, {})]
     })
