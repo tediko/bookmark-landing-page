@@ -2,4 +2,45 @@
 
 .subscribe {
     $root: &;
+    padding: 0 32px;
+    background-color: $c-blue-soft;
+
+    &__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 72px 0 60px 0;
+    }
+
+    &__users {
+        text-transform: uppercase;
+        color: $c-white;
+        font-size: 0.83rem;
+        letter-spacing: 0.3em;
+    }
+
+    &__title {
+        margin-top: 14px;
+    }
+
+    &__form {
+        display: flex;
+        flex-flow: column;
+        gap: 16px;
+        width: 100%;
+        margin-top: 33px;
+    }
+
+    &__form-input {
+        border: none;
+        padding: 16px 0;
+        border-radius: 5px;
+        padding-left: 20px;
+        font-family: "Rubik";
+        font-size: 0.9rem;
+        
+        &::placeholder {
+            color: $c-blue-grayish;
+        }
+    }
 }
