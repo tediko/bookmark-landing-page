@@ -1,13 +1,11 @@
 import Icon from './Icon';
-import logo from '../../assets/img/logo-bookmark-white.svg';
+import Logo from './Logo';
 
 const Footer = () => {
     return ( 
         <footer className="footer">
             <div className="footer__container container">
-                <a href="#" className="footer__logo">
-                    <img src={logo} alt="Bookmark - Home page" className="footer__logo-img" />
-                </a>
+                <Logo className="footer" color="white" altText="Bookmark - Home page" />
                 <nav className="footer__nav">
                     <ul className="footer__nav-list">
                         <li className="footer__nav-item">

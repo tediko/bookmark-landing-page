@@ -553,7 +553,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Icon */ "./src/js/components/Icon.js");
-/* harmony import */ var _assets_img_logo_bookmark_white_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/img/logo-bookmark-white.svg */ "./src/assets/img/logo-bookmark-white.svg");
+/* harmony import */ var _Logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Logo */ "./src/js/components/Logo.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -565,14 +565,10 @@ var Footer = function Footer() {
     className: "footer",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "footer__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-        href: "#",
-        className: "footer__logo",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-          src: _assets_img_logo_bookmark_white_svg__WEBPACK_IMPORTED_MODULE_1__.default,
-          alt: "Bookmark - Home page",
-          className: "footer__logo-img"
-        })
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Logo__WEBPACK_IMPORTED_MODULE_1__.default, {
+        className: "footer",
+        color: "white",
+        altText: "Bookmark - Home page"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("nav", {
         className: "footer__nav",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
@@ -764,6 +760,42 @@ var KeyVisual = function KeyVisual() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (KeyVisual);
+
+/***/ }),
+
+/***/ "./src/js/components/Logo.js":
+/*!***********************************!*\
+  !*** ./src/js/components/Logo.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_img_logo_bookmark_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/img/logo-bookmark.svg */ "./src/assets/img/logo-bookmark.svg");
+/* harmony import */ var _assets_img_logo_bookmark_white_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/img/logo-bookmark-white.svg */ "./src/assets/img/logo-bookmark-white.svg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var Logo = function Logo(_ref) {
+  var className = _ref.className,
+      color = _ref.color,
+      altText = _ref.altText;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+    href: "#",
+    className: "".concat(className, "__logo"),
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      src: color === 'white' ? _assets_img_logo_bookmark_white_svg__WEBPACK_IMPORTED_MODULE_1__.default : _assets_img_logo_bookmark_svg__WEBPACK_IMPORTED_MODULE_0__.default,
+      alt: altText,
+      className: "".concat(className, "__logo-img")
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
 
 /***/ }),
 
