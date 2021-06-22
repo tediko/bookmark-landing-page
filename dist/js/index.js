@@ -826,7 +826,8 @@ var SubscribeForm = function SubscribeForm() {
       className: "subscribe__form-label sr-only",
       children: "Subscribe to newsletter!"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-      type: "text",
+      type: "email",
+      name: "email",
       id: "email-sub",
       className: "subscribe__form-input",
       placeholder: "Enter your email address"
