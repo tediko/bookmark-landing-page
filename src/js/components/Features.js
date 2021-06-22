@@ -1,3 +1,5 @@
+import Button from './Button';
+
 const Features = () => {
     return ( 
         <section className="features">
@@ -20,7 +22,7 @@ const Features = () => {
                         <h2 className="features__tab-title heading--xl">Bookmark in one click</h2>
                         <p className="features__tab-text paragraph--l">Organize your bookmarks however you like. Our simple drag-and-drop interface 
                             gives you complete control over how you manage your favourite sites.</p>
-                        <a href="#" className="features__tab-cta btn--info btn--blue">More Info</a>
+                        <Button type="anchor" className="features__tab-cta" name="info" color="blue" text="More Info" />
                     </div>
                 </div>
             </div>
