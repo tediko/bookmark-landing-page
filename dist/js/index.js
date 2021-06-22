@@ -828,9 +828,10 @@ var SubscribeForm = function SubscribeForm() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
       type: "text",
       id: "email-sub",
-      className: "subscribe__form-input"
+      className: "subscribe__form-input",
+      placeholder: "Enter your email address"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
-      className: "subscribe__cta",
+      className: "subscribe__form-cta",
       name: "contact",
       color: "red",
       text: "Contact Us"
