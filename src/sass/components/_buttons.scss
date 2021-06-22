@@ -13,6 +13,7 @@
     font-family: $ff-primary;
     font-weight: 500;
     font-size: 0.85rem;
+    border-radius: 5px;
     
     &--login-mobile {
         @extend #{$root};
@@ -28,7 +29,6 @@
         padding: 11px 31px;
         background-color: $c-red-soft;
         border: 1px solid darken($c-red-soft, 20);
-        border-radius: 5px;
         text-transform: uppercase;
         letter-spacing: 0.07rem;
         box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.12);
@@ -38,7 +38,6 @@
         @extend #{$root};
         padding: 16px 18px;
         color: $c-white;
-        border-radius: 5px;
         letter-spacing: 0.03em;
 
         @include breakpoint(md) {
@@ -50,7 +49,6 @@
         @extend #{$root};
         align-self: flex-start;
         padding: 16px 25px;
-        border-radius: 5px;
         color: $c-white;
     }
 
@@ -58,9 +56,13 @@
         @extend #{$root};
         padding: 16px 36px;
         color: $c-white;
-        border-radius: 5px;
         font-size: 0.89rem;
         letter-spacing: 0.01em
+    }
+
+    &--contact {
+        @extend #{$root};
+        padding: 16px 0;
     }
 
     &--blue {
@@ -72,5 +74,9 @@
         background-color: lighten($c-blue-grayish, 38);
         color: lighten($c-blue-dark, 20);
         box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    &--red {
+        background-color: $c-red-soft;
     }
 }
