@@ -17,6 +17,27 @@
     overflow: hidden;
 }
 
+/* Skip to content link */
+.skip-to-content-link {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    background-color: $c-white;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    z-index: 100;
+    transform: translateX(-200px);
+    transition: transform 300ms ease;
+
+    &:focus {
+        outline: 3px dashed $c-red-soft;
+        outline-offset: 0;
+        transform: translateX(0);
+    }
+}
+
 /* Headings */
 .heading {
     color: $c-blue-dark;
