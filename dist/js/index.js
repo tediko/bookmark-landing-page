@@ -302,7 +302,7 @@ var FaqAccordionItem = function FaqAccordionItem(_ref) {
     red: 'hsl(0, 94%, 66%)'
   };
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    setHeightEl("".concat(refHeight.current.scrollHeight, "px"));
+    setHeightEl("".concat(refHeight.current.scrollHeight + 30, "px"));
   }, []);
   /**
   * Function to change toggle state. 
@@ -314,9 +314,9 @@ var FaqAccordionItem = function FaqAccordionItem(_ref) {
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("li", {
     className: "faq__accordion-item",
-    onClick: toggleState,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h4", {
-      className: "faq__accordion-question heading--xm",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("button", {
+      className: "faq__accordion-question",
+      onClick: toggleState,
       children: [faq.question, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_1__.default, {
         name: "arrow-down",
         size: 18,

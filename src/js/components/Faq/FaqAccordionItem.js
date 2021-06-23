@@ -12,7 +12,7 @@ const FaqAccordionItem = ({ faq }) => {
     }
 
     useEffect(() => {
-        setHeightEl(`${refHeight.current.scrollHeight}px`);
+        setHeightEl(`${refHeight.current.scrollHeight + 30}px`);
     }, [])
     
     /**
@@ -23,9 +23,11 @@ const FaqAccordionItem = ({ faq }) => {
     }
 
     return ( 
-        <li className="faq__accordion-item" onClick={toggleState}>
-            <h4 className="faq__accordion-question heading--xm">{faq.question}
-                <Icon name="arrow-down" size={18} color={!toggle ? iconColors.blue : iconColors.red} customStyle={{transition: 'all 400ms ease-in', transform: toggle ? 'rotate(180deg)' : ''}} /></h4>
+        <li className="faq__accordion-item">
+            <button className="faq__accordion-question" onClick={toggleState}>
+                {faq.question}
+                <Icon name="arrow-down" size={18} color={!toggle ? iconColors.blue : iconColors.red} customStyle={{transition: 'all 400ms ease-in', transform: toggle ? 'rotate(180deg)' : ''}} />
+            </button>
             <div className={`faq__accordion-toggle ${toggle ? 'open' : ''}`} ref={refHeight} style={{height: toggle ? heightEl : 0}}>
                 <p className="faq__accordion-desc paragraph--l" aria-hidden={!toggle ? 'true' : 'false'}>{faq.answer}</p>
             </div>
