@@ -76,8 +76,18 @@
         cursor: pointer;
 
         @include breakpoint(md) {
-            transition: color 300ms ease-in-out;
+            transition: color 300ms ease-in-out,
+                        padding 250ms ease-in;
             padding: 23px 24px 19px 0;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus-visible {
+            color: $c-red-soft;
+            padding-left: 5px;
         }
     }
 
