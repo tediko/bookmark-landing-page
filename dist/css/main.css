@@ -672,6 +672,7 @@ button:focus-visible {
     align-items: center;
     border-top: unset;
     width: 100%;
+    cursor: pointer;
   }
 }
 .features__tab-label::before {
