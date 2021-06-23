@@ -68,4 +68,12 @@
             justify-self: end;
         }
     }
+
+    &__socials-link {
+        @include breakpoint(md) {
+            &:hover svg {
+                color: $c-red-soft;
+            }
+        }
+    }
 }

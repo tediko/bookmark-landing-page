@@ -1299,6 +1299,11 @@ button:focus-visible {
     justify-self: end;
   }
 }
+@media (min-width: 768px) {
+  .footer__socials-link:hover svg {
+    color: #fa5757;
+  }
+}
 
 /* Base */
 /* Utilities */
