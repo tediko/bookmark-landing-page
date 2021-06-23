@@ -316,6 +316,8 @@ var FaqAccordionItem = function FaqAccordionItem(_ref) {
     className: "faq__accordion-item",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("button", {
       className: "faq__accordion-question",
+      "aria-controls": "faq".concat(faq.id),
+      "aria-expanded": toggle,
       onClick: toggleState,
       children: [faq.question, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_1__.default, {
         name: "arrow-down",
@@ -327,6 +329,7 @@ var FaqAccordionItem = function FaqAccordionItem(_ref) {
         }
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      id: "faq".concat(faq.id),
       className: "faq__accordion-toggle ".concat(toggle ? 'open' : ''),
       ref: refHeight,
       style: {

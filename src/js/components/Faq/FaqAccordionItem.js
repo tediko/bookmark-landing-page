@@ -24,11 +24,11 @@ const FaqAccordionItem = ({ faq }) => {
 
     return ( 
         <li className="faq__accordion-item">
-            <button className="faq__accordion-question" onClick={toggleState}>
+            <button className="faq__accordion-question" aria-controls={`faq${faq.id}`} aria-expanded={toggle} onClick={toggleState}>
                 {faq.question}
                 <Icon name="arrow-down" size={18} color={!toggle ? iconColors.blue : iconColors.red} customStyle={{transition: 'all 400ms ease-in', transform: toggle ? 'rotate(180deg)' : ''}} />
             </button>
-            <div className={`faq__accordion-toggle ${toggle ? 'open' : ''}`} ref={refHeight} style={{height: toggle ? heightEl : 0}}>
+            <div id={`faq${faq.id}`} className={`faq__accordion-toggle ${toggle ? 'open' : ''}`} ref={refHeight} style={{height: toggle ? heightEl : 0}}>
                 <p className="faq__accordion-desc paragraph--l" aria-hidden={!toggle ? 'true' : 'false'}>{faq.answer}</p>
             </div>
         </li>
