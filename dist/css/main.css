@@ -97,6 +97,36 @@ ol {
     transform: scale(1);
   }
 }
+@-webkit-keyframes iconError {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+  }
+  80% {
+    transform: translateY(-50%) scale(1.2);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+@keyframes iconError {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+  }
+  80% {
+    transform: translateY(-50%) scale(1.2);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
 html {
   font-size: 16px;
 }
@@ -1035,7 +1065,7 @@ a {
 .subscribe__form.error {
   gap: 50px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .subscribe__form.error {
     gap: 16px;
   }
@@ -1044,20 +1074,25 @@ a {
   -webkit-animation: formError 550ms ease-in forwards;
           animation: formError 550ms ease-in forwards;
 }
+.subscribe__form-input-wrapper {
+  position: relative;
+  flex-basis: 100%;
+}
+@media (min-width: 480px) {
+  .subscribe__form-input-wrapper {
+    flex-basis: 300px;
+  }
+}
 .subscribe__form-input {
+  position: relative;
   border: none;
   padding: 16px 0;
   border-radius: 5px;
   padding-left: 20px;
   font-family: "Rubik";
   font-size: 0.9rem;
-  flex-basis: 100%;
+  width: 100%;
   z-index: 1;
-}
-@media (min-width: 480px) {
-  .subscribe__form-input {
-    flex-basis: 300px;
-  }
 }
 .subscribe__form-input::-moz-placeholder {
   color: #9194a1;
@@ -1068,6 +1103,12 @@ a {
 .subscribe__form-input::placeholder {
   color: #9194a1;
 }
+.subscribe__form-input:focus {
+  outline: none;
+}
+.subscribe__form-input:focus-visible {
+  outline: none;
+}
 .subscribe__form-cta {
   flex: 1;
 }
@@ -1076,9 +1117,7 @@ a {
   position: absolute;
   display: flex;
   align-items: flex-end;
-  top: -1px;
-  left: -1px;
-  width: calc(100% + 2px);
+  inset: -1px -1px 0 -1px;
   height: 80px;
   padding: 0 0 8px 8px;
   background-color: #fa5757;
@@ -1088,10 +1127,26 @@ a {
   font-weight: 500;
   opacity: 0;
 }
-@media (min-width: 768px) {
-  .subscribe__form-error {
-    width: 302px;
-  }
+.subscribe__form-error-icon {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+  -webkit-animation: iconError 550ms ease-in-out forwards;
+          animation: iconError 550ms ease-in-out forwards;
+}
+.subscribe__form-error-icon::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/icon-error.svg");
 }
 .subscribe__form-success {
   margin-top: 33px;
