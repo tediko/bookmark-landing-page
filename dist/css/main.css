@@ -359,7 +359,7 @@ button:focus-visible {
 .header__menu-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(37, 43, 70, 0.95);
   z-index: -1;
   opacity: 0;
   -webkit-animation: menuOverlayIn 1000ms ease-in-out forwards;
