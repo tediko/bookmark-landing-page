@@ -2,7 +2,7 @@ import Button from '../shared/Button';
 
 const Features = () => {
     return ( 
-        <section className="features">
+        <section className="features" id="features">
             <div className="features__container container">
                 <h2 className="features__title heading--xl">Features</h2>
                 <p className="features__text paragraph--l">Our aim is to make it quick and easy for you to access your favourite websites. 
