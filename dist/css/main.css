@@ -375,7 +375,9 @@ button:focus-visible {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 0.85rem;
+  border: 2px solid transparent;
   border-radius: 5px;
+  transition: background-color 350ms ease-in, color 350ms ease-in, border 350ms ease-in;
 }
 .btn:focus, .btn--contact:focus, .btn--install:focus, .btn--info:focus, .btn--intro:focus, .btn--login-desktop:focus, .btn--login-mobile:focus {
   outline: none;
@@ -392,48 +394,76 @@ button:focus-visible {
   text-transform: uppercase;
 }
 .btn--login-desktop {
-  padding: 11px 31px;
+  padding: 9px 29px;
   background-color: #fa5757;
-  border: 1px solid #e40707;
+  border: 2px solid #e40707;
   text-transform: uppercase;
   letter-spacing: 0.07rem;
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.12);
 }
+@media (min-width: 768px) {
+  .btn--login-desktop:hover {
+    background-color: white;
+    color: #e40707;
+  }
+}
 .btn--intro {
-  padding: 16px 18px;
+  padding: 14px 16px;
   color: white;
   letter-spacing: 0.03em;
 }
 @media (min-width: 768px) {
   .btn--intro {
-    padding: 16px 25px;
+    padding: 14px 23px;
   }
 }
 .btn--info {
   align-self: flex-start;
-  padding: 16px 25px;
+  padding: 14px 23px;
   color: white;
 }
 .btn--install {
-  padding: 16px 36px;
+  padding: 14px 34px;
   color: white;
   font-size: 0.89rem;
   letter-spacing: 0.01em;
 }
 .btn--contact {
-  padding: 16px 0;
+  padding: 14px 0;
 }
 .btn--blue {
+  border-color: #5368df;
   background-color: #5368df;
   box-shadow: 0 5px 6px 0 rgba(83, 104, 223, 0.2);
 }
+@media (min-width: 768px) {
+  .btn--blue:hover {
+    background-color: white;
+    color: #5368df;
+  }
+}
 .btn--gray {
   background-color: #f9fafa;
+  border-color: #f9fafa;
   color: #485489;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.12);
 }
+@media (min-width: 768px) {
+  .btn--gray:hover {
+    background-color: white;
+    color: #252b46;
+    border-color: #252b46;
+  }
+}
 .btn--red {
   background-color: #fa5757;
+  border-color: #fa5757;
+}
+@media (min-width: 768px) {
+  .btn--red:hover {
+    background-color: white;
+    color: #fa5757;
+  }
 }
 .btn--transparent {
   background-color: transparent;

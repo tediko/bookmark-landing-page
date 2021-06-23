@@ -13,7 +13,11 @@
     font-family: $ff-primary;
     font-weight: 500;
     font-size: 0.85rem;
+    border: 2px solid transparent;
     border-radius: 5px;
+    transition: background-color 350ms ease-in,
+                color 350ms ease-in,
+                border 350ms ease-in;
 
     &:focus {
         outline: none;
@@ -35,35 +39,42 @@
 
     &--login-desktop {
         @extend #{$root};
-        padding: 11px 31px;
+        padding: 9px 29px;
         background-color: $c-red-soft;
-        border: 1px solid darken($c-red-soft, 20);
+        border: 2px solid darken($c-red-soft, 20);
         text-transform: uppercase;
         letter-spacing: 0.07rem;
         box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.12);
+        
+        @include breakpoint(md) {
+            &:hover {
+                background-color: $c-white;
+                color: darken($c-red-soft, 20);
+            }
+        }
     }
 
     &--intro {
         @extend #{$root};
-        padding: 16px 18px;
+        padding: 14px 16px;
         color: $c-white;
         letter-spacing: 0.03em;
 
         @include breakpoint(md) {
-            padding: 16px 25px;
+            padding: 14px 23px;
         }
     }
 
     &--info {
         @extend #{$root};
         align-self: flex-start;
-        padding: 16px 25px;
+        padding: 14px 23px;
         color: $c-white;
     }
 
     &--install {
         @extend #{$root};
-        padding: 16px 36px;
+        padding: 14px 34px;
         color: $c-white;
         font-size: 0.89rem;
         letter-spacing: 0.01em
@@ -71,22 +82,47 @@
 
     &--contact {
         @extend #{$root};
-        padding: 16px 0;
+        padding: 14px 0;
     }
 
     &--blue {
+        border-color: $c-blue-soft;
         background-color: $c-blue-soft;
         box-shadow: 0 5px 6px 0 transparentize($c-blue-soft, 0.8);
+
+        @include breakpoint(md) {
+            &:hover {
+                background-color: $c-white;
+                color: $c-blue-soft;
+            }
+        }
     }
 
     &--gray {
         background-color: lighten($c-blue-grayish, 38);
+        border-color:lighten($c-blue-grayish, 38);
         color: lighten($c-blue-dark, 20);
         box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.12);
+
+        @include breakpoint(md) {
+            &:hover {
+                background-color: $c-white;
+                color: $c-blue-dark;
+                border-color: $c-blue-dark;
+            }
+        }
     }
 
     &--red {
         background-color: $c-red-soft;
+        border-color: $c-red-soft;
+
+        @include breakpoint(md) {
+            &:hover {
+                background-color: $c-white;
+                color: $c-red-soft;
+            }
+        }
     }
 
     &--transparent {
