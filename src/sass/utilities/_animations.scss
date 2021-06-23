@@ -31,3 +31,19 @@
         transform: scale(1);
     }
 }
+
+@keyframes iconError {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-50%) scale(0.5);
+    }
+    80% {
+        transform: translateY(-50%) scale(1.2);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+}
