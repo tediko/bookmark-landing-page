@@ -8,13 +8,14 @@ const Features = () => {
                 <p className="features__text paragraph--l">Our aim is to make it quick and easy for you to access your favourite websites. 
                     Your bookmarks sync between your devices so you can access them on the go.</p>
                 <div className="features__tab-controls">
-                    <input type="radio" name="tab" id="bookmarking" className="features__tab-input" />
+                    <input type="radio" name="tab" id="bookmarking" className="features__tab-input" defaultChecked/>
                     <label htmlFor="bookmarking" className="features__tab-label">Simple Bookmarking</label>
                     <input type="radio" name="tab" id="searching" className="features__tab-input" />
                     <label htmlFor="searching" className="features__tab-label">Speedy Searching</label>
                     <input type="radio" name="tab" id="sharing" className="features__tab-input" />
                     <label htmlFor="sharing" className="features__tab-label">Easy Sharing</label>
                     <span className="features__tab-bar"></span>
+                    <span className="features__tab-overlay"></span>
                 </div>
                 <div className="features__tab-content">
                     <div className="features__tab-illustration"></div>

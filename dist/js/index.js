@@ -414,7 +414,8 @@ var Features = function Features() {
           type: "radio",
           name: "tab",
           id: "bookmarking",
-          className: "features__tab-input"
+          className: "features__tab-input",
+          defaultChecked: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
           htmlFor: "bookmarking",
           className: "features__tab-label",
@@ -439,6 +440,8 @@ var Features = function Features() {
           children: "Easy Sharing"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
           className: "features__tab-bar"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+          className: "features__tab-overlay"
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "features__tab-content",
