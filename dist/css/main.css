@@ -630,6 +630,10 @@ a {
   opacity: 1;
   width: 60%;
 }
+.features__tab-input:focus-visible ~ .features__tab-overlay {
+  outline: 2px dashed #fa5757;
+  outline-offset: 2px;
+}
 .features__tab-label {
   position: relative;
   font-size: 1.06rem;
@@ -698,6 +702,11 @@ a {
     z-index: 1;
     transition: left 300ms ease-in-out, transform 300ms ease-in-out;
   }
+}
+.features__tab-overlay {
+  position: absolute;
+  inset: 0 0 0 0;
+  pointer-events: none;
 }
 .features__tab-content {
   width: 100%;

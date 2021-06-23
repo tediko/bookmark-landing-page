@@ -81,6 +81,11 @@
             opacity: 1;
             width: 60%;
         }
+
+        &:focus-visible ~ #{$root}__tab-overlay {
+            outline: 2px dashed $c-red-soft;
+            outline-offset: 2px;
+        }
     }
 
     &__tab-label {
@@ -156,6 +161,12 @@
                             transform 300ms ease-in-out;
             }
         }
+    }
+    
+    &__tab-overlay {
+        position: absolute;
+        inset: 0 0 0 0;
+        pointer-events: none;
     }
 
     &__tab-content {
