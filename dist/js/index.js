@@ -847,7 +847,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
 /* harmony import */ var _useFormValidation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useFormValidation */ "./src/js/components/Subscribe/useFormValidation.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _shared_Icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Icon */ "./src/js/components/shared/Icon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -863,31 +865,36 @@ var SubscribeForm = function SubscribeForm(_ref) {
       error = _useFormValidation.error,
       errorMessage = _useFormValidation.errorMessage;
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
     action: "#",
     noValidate: true,
     className: "subscribe__form ".concat(error ? 'error' : ''),
     onSubmit: handleSubmit,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
       htmlFor: "email-sub",
       className: "subscribe__form-label sr-only",
       children: "Subscribe to newsletter!"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-      type: "email",
-      name: "email",
-      id: "email-sub",
-      className: "subscribe__form-input",
-      placeholder: "Enter your email address",
-      value: mail,
-      onChange: handleChange
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "subscribe__form-input-wrapper",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+        type: "email",
+        name: "email",
+        id: "email-sub",
+        className: "subscribe__form-input",
+        placeholder: "Enter your email address",
+        value: mail,
+        onChange: handleChange
+      }), error && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+        className: "subscribe__form-error",
+        children: errorMessage
+      }), error && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+        className: "subscribe__form-error-icon"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
       className: "subscribe__form-cta",
       name: "contact",
       color: "red",
       text: "Contact Us"
-    }), error && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-      className: "subscribe__form-error",
-      children: errorMessage
     })]
   });
 };
