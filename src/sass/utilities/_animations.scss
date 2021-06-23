@@ -1,6 +1,33 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+/* Header section */
+@keyframes navSlideIn {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes navSlideOut {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
 /* Subscribe section */
 @keyframes formError {
     0% {
