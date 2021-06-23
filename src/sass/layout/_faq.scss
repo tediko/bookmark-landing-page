@@ -47,12 +47,9 @@
     &__accordion-item {
         display: flex;
         flex-flow: column;
-        padding: 20px 0;
         border-bottom: 1px solid lighten($c-blue-grayish, 30);
-        cursor: pointer;
 
         @include breakpoint(md) {
-            padding: 23px 0 19px 0;
             transition: color 300ms ease-in-out;
 
             &:hover {
@@ -71,10 +68,16 @@
         position: relative;
         display: flex;
         justify-content: space-between;
+        padding: 20px 0;
+        background-color: transparent;
+        border: none;
+        font-size: clamp(0.935rem, 3vw, 1.126rem);
+        font-weight: 400;
+        cursor: pointer;
 
         @include breakpoint(md) {
             transition: color 300ms ease-in-out;
-            padding-right: 24px;
+            padding: 23px 24px 19px 0;
         }
     }
 
@@ -91,10 +94,6 @@
             transition: height 300ms ease-in-out,
                         opacity 300ms 300ms ease-in-out;
         }
-    }
-
-    &__accordion-desc {
-        margin-top: 30px;
     }
 
     &__cta {

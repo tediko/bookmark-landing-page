@@ -922,13 +922,10 @@ a {
 .faq__accordion-item {
   display: flex;
   flex-flow: column;
-  padding: 20px 0;
   border-bottom: 1px solid #e3e4e8;
-  cursor: pointer;
 }
 @media (min-width: 768px) {
   .faq__accordion-item {
-    padding: 23px 0 19px 0;
     transition: color 300ms ease-in-out;
   }
   .faq__accordion-item:hover .faq__accordion-question {
@@ -942,11 +939,17 @@ a {
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+  background-color: transparent;
+  border: none;
+  font-size: clamp(0.935rem, 3vw, 1.126rem);
+  font-weight: 400;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .faq__accordion-question {
     transition: color 300ms ease-in-out;
-    padding-right: 24px;
+    padding: 23px 24px 19px 0;
   }
 }
 .faq__accordion-toggle {
@@ -959,9 +962,6 @@ a {
   pointer-events: all;
   opacity: 1;
   transition: height 300ms ease-in-out, opacity 300ms 300ms ease-in-out;
-}
-.faq__accordion-desc {
-  margin-top: 30px;
 }
 .faq__cta {
   align-self: center;
