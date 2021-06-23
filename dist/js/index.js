@@ -535,7 +535,10 @@ var Footer = function Footer() {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
             name: "fb",
             size: 25,
-            color: "white"
+            color: "white",
+            customStyle: {
+              transition: 'color 350ms ease-in-out'
+            }
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: "#",
@@ -544,7 +547,10 @@ var Footer = function Footer() {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
             name: "tt",
             size: 25,
-            color: "white"
+            color: "white",
+            customStyle: {
+              transition: 'color 350ms ease-in-out'
+            }
           })
         })]
       })]

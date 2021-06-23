@@ -21,10 +21,10 @@ const Footer = () => {
                 </nav>
                 <div className="footer__socials">
                     <a href="#" className="footer__socials-link" aria-label="Follow us on Facebook">
-                        <Icon name="fb" size={25} color="white" />
+                        <Icon name="fb" size={25} color="white" customStyle={{transition: 'color 350ms ease-in-out'}} />
                     </a>
                     <a href="#" className="footer__socials-link" aria-label="Follow us on Twitter">
-                        <Icon name="tt" size={25} color="white" />
+                        <Icon name="tt" size={25} color="white" customStyle={{transition: 'color 350ms ease-in-out'}} />
                     </a>
                 </div>
             </div>
