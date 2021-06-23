@@ -50,6 +50,11 @@
 
         @include breakpoint(md) {
             font-size: 0.83rem;
+            transition: color 350ms ease-in-out;
+
+            &:hover {
+                color: $c-red-soft;
+            }
         }
     }
 

@@ -1282,6 +1282,10 @@ button:focus-visible {
 @media (min-width: 768px) {
   .footer__nav-item {
     font-size: 0.83rem;
+    transition: color 350ms ease-in-out;
+  }
+  .footer__nav-item:hover {
+    color: #fa5757;
   }
 }
 .footer__socials {
