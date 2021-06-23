@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import ExtensionsCard from './ExtensionsCard';
-import chromeLogo from '../../assets/img/logo-chrome.svg';
-import firefoxLogo from '../../assets/img/logo-firefox.svg';
-import operaLogo from '../../assets/img/logo-opera.svg';
+import chromeLogo from '../../../assets/img/logo-chrome.svg';
+import firefoxLogo from '../../../assets/img/logo-firefox.svg';
+import operaLogo from '../../../assets/img/logo-opera.svg';
 
 const Extensions = () => {
     const [cards, setCards] = useState([

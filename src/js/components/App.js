@@ -1,9 +1,9 @@
-import KeyVisual from './KeyVisual';
-import Features from './Features';
-import Extensions from './Extensions';
-import Faq from './Faq';
-import Subscribe from './Subscribe';
-import Footer from './Footer';
+import KeyVisual from './KeyVisual/KeyVisual';
+import Features from './Features/Features';
+import Extensions from './Extensions/Extensions';
+import Faq from './Faq/Faq';
+import Subscribe from './Subscribe/Subscribe';
+import Footer from './Footer/Footer';
 
 function App() {
     return (

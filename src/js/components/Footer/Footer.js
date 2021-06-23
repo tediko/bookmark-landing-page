@@ -1,5 +1,5 @@
-import Icon from './Icon';
-import Logo from './Logo';
+import Icon from '../shared/Icon';
+import Logo from '../shared/Logo';
 
 const Footer = () => {
     return ( 

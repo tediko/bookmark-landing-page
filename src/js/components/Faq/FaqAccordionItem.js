@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import Icon from "./Icon";
+import Icon from "../shared/Icon";
 
 const FaqAccordionItem = ({ faq }) => {
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import FaqAccordionList from "./FaqAccordionList";
-import Button from "./Button";
+import Button from "../shared/Button";
 
 const Faq = () => {
     const [faqs, setFaqs] = useState([

@@ -1,5 +1,5 @@
-import blackLogo from '../../assets/img/logo-bookmark.svg';
-import whiteLogo from '../../assets/img/logo-bookmark-white.svg';
+import blackLogo from '../../../assets/img/logo-bookmark.svg';
+import whiteLogo from '../../../assets/img/logo-bookmark-white.svg';
 
 const Logo = ({ className, color, altText }) => {
     return ( 

@@ -12,12 +12,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _KeyVisual__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./KeyVisual */ "./src/js/components/KeyVisual.js");
-/* harmony import */ var _Features__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Features */ "./src/js/components/Features.js");
-/* harmony import */ var _Extensions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Extensions */ "./src/js/components/Extensions.js");
-/* harmony import */ var _Faq__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Faq */ "./src/js/components/Faq.js");
-/* harmony import */ var _Subscribe__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Subscribe */ "./src/js/components/Subscribe.js");
-/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer */ "./src/js/components/Footer.js");
+/* harmony import */ var _KeyVisual_KeyVisual__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./KeyVisual/KeyVisual */ "./src/js/components/KeyVisual/KeyVisual.js");
+/* harmony import */ var _Features_Features__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Features/Features */ "./src/js/components/Features/Features.js");
+/* harmony import */ var _Extensions_Extensions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Extensions/Extensions */ "./src/js/components/Extensions/Extensions.js");
+/* harmony import */ var _Faq_Faq__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Faq/Faq */ "./src/js/components/Faq/Faq.js");
+/* harmony import */ var _Subscribe_Subscribe__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Subscribe/Subscribe */ "./src/js/components/Subscribe/Subscribe.js");
+/* harmony import */ var _Footer_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer/Footer */ "./src/js/components/Footer/Footer.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -31,7 +31,7 @@ __webpack_require__.r(__webpack_exports__);
 function App() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
     className: "main-container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_KeyVisual__WEBPACK_IMPORTED_MODULE_0__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Features__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Extensions__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Faq__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Subscribe__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Footer__WEBPACK_IMPORTED_MODULE_5__.default, {})]
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_KeyVisual_KeyVisual__WEBPACK_IMPORTED_MODULE_0__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Features_Features__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Extensions_Extensions__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Faq_Faq__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Subscribe_Subscribe__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__.default, {})]
   });
 }
 
@@ -39,103 +39,10 @@ function App() {
 
 /***/ }),
 
-/***/ "./src/js/components/Button.js":
-/*!*************************************!*\
-  !*** ./src/js/components/Button.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-var Button = function Button(_ref) {
-  var type = _ref.type,
-      className = _ref.className,
-      name = _ref.name,
-      color = _ref.color,
-      text = _ref.text,
-      label = _ref.label;
-  return type === 'anchor' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-    href: "#",
-    className: "".concat(className, " btn--").concat(name, " btn--").concat(color),
-    children: text
-  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
-    className: "".concat(className, " btn--").concat(name, " btn--").concat(color),
-    "aria-label": label ? label : null,
-    children: text
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
-
-/***/ }),
-
-/***/ "./src/js/components/DesktopNav.js":
-/*!*****************************************!*\
-  !*** ./src/js/components/DesktopNav.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button */ "./src/js/components/Button.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-var DesktopNav = function DesktopNav() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("nav", {
-    className: "header__nav desktop-nav",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
-      className: "desktop-nav__list",
-      id: "nav-list",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-        className: "desktop-nav__item",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "#",
-          className: "desktop-nav__link",
-          children: "Features"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-        className: "desktop-nav__item",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "#",
-          className: "desktop-nav__link",
-          children: "Pricing"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-        className: "desktop-nav__item",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "#",
-          className: "desktop-nav__link",
-          children: "Contact"
-        })
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
-      type: "anchor",
-      className: "desktop-nav__cta",
-      name: "login-desktop",
-      color: "red",
-      text: "Login"
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DesktopNav);
-
-/***/ }),
-
-/***/ "./src/js/components/Extensions.js":
-/*!*****************************************!*\
-  !*** ./src/js/components/Extensions.js ***!
-  \*****************************************/
+/***/ "./src/js/components/Extensions/Extensions.js":
+/*!****************************************************!*\
+  !*** ./src/js/components/Extensions/Extensions.js ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -143,10 +50,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _ExtensionsCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExtensionsCard */ "./src/js/components/ExtensionsCard.js");
-/* harmony import */ var _assets_img_logo_chrome_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/img/logo-chrome.svg */ "./src/assets/img/logo-chrome.svg");
-/* harmony import */ var _assets_img_logo_firefox_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/img/logo-firefox.svg */ "./src/assets/img/logo-firefox.svg");
-/* harmony import */ var _assets_img_logo_opera_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/img/logo-opera.svg */ "./src/assets/img/logo-opera.svg");
+/* harmony import */ var _ExtensionsCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExtensionsCard */ "./src/js/components/Extensions/ExtensionsCard.js");
+/* harmony import */ var _assets_img_logo_chrome_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../assets/img/logo-chrome.svg */ "./src/assets/img/logo-chrome.svg");
+/* harmony import */ var _assets_img_logo_firefox_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../assets/img/logo-firefox.svg */ "./src/assets/img/logo-firefox.svg");
+/* harmony import */ var _assets_img_logo_opera_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../assets/img/logo-opera.svg */ "./src/assets/img/logo-opera.svg");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -213,10 +120,10 @@ var Extensions = function Extensions() {
 
 /***/ }),
 
-/***/ "./src/js/components/ExtensionsCard.js":
-/*!*********************************************!*\
-  !*** ./src/js/components/ExtensionsCard.js ***!
-  \*********************************************/
+/***/ "./src/js/components/Extensions/ExtensionsCard.js":
+/*!********************************************************!*\
+  !*** ./src/js/components/Extensions/ExtensionsCard.js ***!
+  \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -224,7 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Button */ "./src/js/components/Button.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -250,7 +157,7 @@ var ExtensionsCard = function ExtensionsCard(_ref) {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
           className: "extensions__card-text paragraph--xm",
           children: ["Minimum version ", card.version]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
           className: "extensions__card-cta",
           name: "install",
           color: "blue",
@@ -265,10 +172,10 @@ var ExtensionsCard = function ExtensionsCard(_ref) {
 
 /***/ }),
 
-/***/ "./src/js/components/Faq.js":
-/*!**********************************!*\
-  !*** ./src/js/components/Faq.js ***!
-  \**********************************/
+/***/ "./src/js/components/Faq/Faq.js":
+/*!**************************************!*\
+  !*** ./src/js/components/Faq/Faq.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -276,8 +183,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _FaqAccordionList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FaqAccordionList */ "./src/js/components/FaqAccordionList.js");
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Button */ "./src/js/components/Button.js");
+/* harmony import */ var _FaqAccordionList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FaqAccordionList */ "./src/js/components/Faq/FaqAccordionList.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -331,7 +238,7 @@ var Faq = function Faq() {
         children: "Here are some of our FAQs. If you have any other questions you\u2019d like answered please feel free to email us."
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_FaqAccordionList__WEBPACK_IMPORTED_MODULE_1__.default, {
         faqs: faqs
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
         type: "anchor",
         className: "faq__cta",
         name: "info",
@@ -346,10 +253,10 @@ var Faq = function Faq() {
 
 /***/ }),
 
-/***/ "./src/js/components/FaqAccordionItem.js":
-/*!***********************************************!*\
-  !*** ./src/js/components/FaqAccordionItem.js ***!
-  \***********************************************/
+/***/ "./src/js/components/Faq/FaqAccordionItem.js":
+/*!***************************************************!*\
+  !*** ./src/js/components/Faq/FaqAccordionItem.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -357,7 +264,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Icon */ "./src/js/components/Icon.js");
+/* harmony import */ var _shared_Icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Icon */ "./src/js/components/shared/Icon.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -410,7 +317,7 @@ var FaqAccordionItem = function FaqAccordionItem(_ref) {
     onClick: toggleState,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h4", {
       className: "faq__accordion-question heading--xm",
-      children: [faq.question, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Icon__WEBPACK_IMPORTED_MODULE_1__.default, {
+      children: [faq.question, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_1__.default, {
         name: "arrow-down",
         size: 18,
         color: !toggle ? iconColors.blue : iconColors.red,
@@ -438,10 +345,10 @@ var FaqAccordionItem = function FaqAccordionItem(_ref) {
 
 /***/ }),
 
-/***/ "./src/js/components/FaqAccordionList.js":
-/*!***********************************************!*\
-  !*** ./src/js/components/FaqAccordionList.js ***!
-  \***********************************************/
+/***/ "./src/js/components/Faq/FaqAccordionList.js":
+/*!***************************************************!*\
+  !*** ./src/js/components/Faq/FaqAccordionList.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -449,7 +356,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _FaqAccordionItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FaqAccordionItem */ "./src/js/components/FaqAccordionItem.js");
+/* harmony import */ var _FaqAccordionItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FaqAccordionItem */ "./src/js/components/Faq/FaqAccordionItem.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -471,17 +378,17 @@ var FaqAccordionList = function FaqAccordionList(_ref) {
 
 /***/ }),
 
-/***/ "./src/js/components/Features.js":
-/*!***************************************!*\
-  !*** ./src/js/components/Features.js ***!
-  \***************************************/
+/***/ "./src/js/components/Features/Features.js":
+/*!************************************************!*\
+  !*** ./src/js/components/Features/Features.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button */ "./src/js/components/Button.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -542,7 +449,7 @@ var Features = function Features() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
             className: "features__tab-text paragraph--l",
             children: "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
             type: "anchor",
             className: "features__tab-cta",
             name: "info",
@@ -559,18 +466,18 @@ var Features = function Features() {
 
 /***/ }),
 
-/***/ "./src/js/components/Footer.js":
-/*!*************************************!*\
-  !*** ./src/js/components/Footer.js ***!
-  \*************************************/
+/***/ "./src/js/components/Footer/Footer.js":
+/*!********************************************!*\
+  !*** ./src/js/components/Footer/Footer.js ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Icon */ "./src/js/components/Icon.js");
-/* harmony import */ var _Logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Logo */ "./src/js/components/Logo.js");
+/* harmony import */ var _shared_Icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../shared/Icon */ "./src/js/components/shared/Icon.js");
+/* harmony import */ var _shared_Logo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Logo */ "./src/js/components/shared/Logo.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -582,7 +489,7 @@ var Footer = function Footer() {
     className: "footer",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "footer__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Logo__WEBPACK_IMPORTED_MODULE_1__.default, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Logo__WEBPACK_IMPORTED_MODULE_1__.default, {
         className: "footer",
         color: "white",
         altText: "Bookmark - Home page"
@@ -619,7 +526,7 @@ var Footer = function Footer() {
           href: "#",
           className: "footer__socials-link",
           "aria-label": "Follow us on Facebook",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
             name: "fb",
             size: 25,
             color: "white"
@@ -628,7 +535,7 @@ var Footer = function Footer() {
           href: "#",
           className: "footer__socials-link",
           "aria-label": "Follow us on Twitter",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
             name: "tt",
             size: 25,
             color: "white"
@@ -643,19 +550,77 @@ var Footer = function Footer() {
 
 /***/ }),
 
-/***/ "./src/js/components/Header.js":
-/*!*************************************!*\
-  !*** ./src/js/components/Header.js ***!
-  \*************************************/
+/***/ "./src/js/components/Header/DesktopNav.js":
+/*!************************************************!*\
+  !*** ./src/js/components/Header/DesktopNav.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _MobileNav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MobileNav */ "./src/js/components/MobileNav.js");
-/* harmony import */ var _DesktopNav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DesktopNav */ "./src/js/components/DesktopNav.js");
-/* harmony import */ var _Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Logo */ "./src/js/components/Logo.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var DesktopNav = function DesktopNav() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("nav", {
+    className: "header__nav desktop-nav",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+      className: "desktop-nav__list",
+      id: "nav-list",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+        className: "desktop-nav__item",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          className: "desktop-nav__link",
+          children: "Features"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+        className: "desktop-nav__item",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          className: "desktop-nav__link",
+          children: "Pricing"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+        className: "desktop-nav__item",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#",
+          className: "desktop-nav__link",
+          children: "Contact"
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+      type: "anchor",
+      className: "desktop-nav__cta",
+      name: "login-desktop",
+      color: "red",
+      text: "Login"
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DesktopNav);
+
+/***/ }),
+
+/***/ "./src/js/components/Header/Header.js":
+/*!********************************************!*\
+  !*** ./src/js/components/Header/Header.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _MobileNav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MobileNav */ "./src/js/components/Header/MobileNav.js");
+/* harmony import */ var _DesktopNav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DesktopNav */ "./src/js/components/Header/DesktopNav.js");
+/* harmony import */ var _shared_Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Logo */ "./src/js/components/shared/Logo.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -668,7 +633,7 @@ var Header = function Header() {
     className: "header",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "header__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Logo__WEBPACK_IMPORTED_MODULE_2__.default, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Logo__WEBPACK_IMPORTED_MODULE_2__.default, {
         className: "header",
         color: "black",
         altText: "Bookmark - Home page"
@@ -681,149 +646,18 @@ var Header = function Header() {
 
 /***/ }),
 
-/***/ "./src/js/components/Icon.js":
-/*!***********************************!*\
-  !*** ./src/js/components/Icon.js ***!
-  \***********************************/
+/***/ "./src/js/components/Header/MobileNav.js":
+/*!***********************************************!*\
+  !*** ./src/js/components/Header/MobileNav.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react_icomoon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-icomoon */ "./node_modules/react-icomoon/dist/index.js");
-/* harmony import */ var react_icomoon__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_icomoon__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-var iconSet = __webpack_require__(/*! ../selection.json */ "./src/js/selection.json");
-
-var Icon = function Icon(_ref) {
-  var name = _ref.name,
-      size = _ref.size,
-      color = _ref.color,
-      customStyle = _ref.customStyle;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)((react_icomoon__WEBPACK_IMPORTED_MODULE_0___default()), {
-    iconSet: iconSet,
-    disableFill: "true",
-    icon: name,
-    size: size,
-    color: color,
-    style: customStyle
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
-
-/***/ }),
-
-/***/ "./src/js/components/KeyVisual.js":
-/*!****************************************!*\
-  !*** ./src/js/components/KeyVisual.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header */ "./src/js/components/Header.js");
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Button */ "./src/js/components/Button.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-
-var KeyVisual = function KeyVisual() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
-    className: "kv",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Header__WEBPACK_IMPORTED_MODULE_0__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "kv__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "kv__illustration"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "kv__intro",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-          className: "kv__title heading--xxl",
-          children: "A Simple Bookmark Manager"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
-          className: "kv__text paragraph--l",
-          children: "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-          className: "kv__cta-wrapper",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
-            className: "kv__cta",
-            name: "intro",
-            color: "blue",
-            text: "Get it on Chrome",
-            label: "Add extension to Chrome"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
-            className: "kv__cta",
-            name: "intro",
-            color: "gray",
-            text: "Get it on Firefox",
-            label: "Add extension to Firefox"
-          })]
-        })]
-      })]
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (KeyVisual);
-
-/***/ }),
-
-/***/ "./src/js/components/Logo.js":
-/*!***********************************!*\
-  !*** ./src/js/components/Logo.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _assets_img_logo_bookmark_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/img/logo-bookmark.svg */ "./src/assets/img/logo-bookmark.svg");
-/* harmony import */ var _assets_img_logo_bookmark_white_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/img/logo-bookmark-white.svg */ "./src/assets/img/logo-bookmark-white.svg");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-var Logo = function Logo(_ref) {
-  var className = _ref.className,
-      color = _ref.color,
-      altText = _ref.altText;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-    href: "#",
-    className: "".concat(className, "__logo"),
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-      src: color === 'white' ? _assets_img_logo_bookmark_white_svg__WEBPACK_IMPORTED_MODULE_1__.default : _assets_img_logo_bookmark_svg__WEBPACK_IMPORTED_MODULE_0__.default,
-      alt: altText,
-      className: "".concat(className, "__logo-img")
-    })
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
-
-/***/ }),
-
-/***/ "./src/js/components/MobileNav.js":
-/*!****************************************!*\
-  !*** ./src/js/components/MobileNav.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _Icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Icon */ "./src/js/components/Icon.js");
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Button */ "./src/js/components/Button.js");
+/* harmony import */ var _shared_Icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../shared/Icon */ "./src/js/components/shared/Icon.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -868,7 +702,7 @@ var MobileNav = function MobileNav() {
             children: "Contact"
           })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
         type: "anchor",
         className: "mobile-nav__cta",
         name: "login-mobile",
@@ -880,7 +714,7 @@ var MobileNav = function MobileNav() {
           href: "#",
           className: "mobile-nav__socials-link",
           "aria-label": "Follow us on Facebook",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
             name: "fb",
             size: 25,
             color: "white"
@@ -889,7 +723,7 @@ var MobileNav = function MobileNav() {
           href: "#",
           className: "mobile-nav__socials-link",
           "aria-label": "Follow us on Twitter",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Icon__WEBPACK_IMPORTED_MODULE_0__.default, {
             name: "tt",
             size: 25,
             color: "white"
@@ -904,17 +738,75 @@ var MobileNav = function MobileNav() {
 
 /***/ }),
 
-/***/ "./src/js/components/Subscribe.js":
-/*!****************************************!*\
-  !*** ./src/js/components/Subscribe.js ***!
-  \****************************************/
+/***/ "./src/js/components/KeyVisual/KeyVisual.js":
+/*!**************************************************!*\
+  !*** ./src/js/components/KeyVisual/KeyVisual.js ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _SubscribeFormControler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SubscribeFormControler */ "./src/js/components/SubscribeFormControler.js");
+/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Header/Header */ "./src/js/components/Header/Header.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var KeyVisual = function KeyVisual() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+    className: "kv",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Header_Header__WEBPACK_IMPORTED_MODULE_0__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "kv__container container",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "kv__illustration"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "kv__intro",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+          className: "kv__title heading--xxl",
+          children: "A Simple Bookmark Manager"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+          className: "kv__text paragraph--l",
+          children: "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "kv__cta-wrapper",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+            className: "kv__cta",
+            name: "intro",
+            color: "blue",
+            text: "Get it on Chrome",
+            label: "Add extension to Chrome"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+            className: "kv__cta",
+            name: "intro",
+            color: "gray",
+            text: "Get it on Firefox",
+            label: "Add extension to Firefox"
+          })]
+        })]
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (KeyVisual);
+
+/***/ }),
+
+/***/ "./src/js/components/Subscribe/Subscribe.js":
+/*!**************************************************!*\
+  !*** ./src/js/components/Subscribe/Subscribe.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _SubscribeFormControler__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SubscribeFormControler */ "./src/js/components/Subscribe/SubscribeFormControler.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -940,18 +832,18 @@ var Subscribe = function Subscribe() {
 
 /***/ }),
 
-/***/ "./src/js/components/SubscribeForm.js":
-/*!********************************************!*\
-  !*** ./src/js/components/SubscribeForm.js ***!
-  \********************************************/
+/***/ "./src/js/components/Subscribe/SubscribeForm.js":
+/*!******************************************************!*\
+  !*** ./src/js/components/Subscribe/SubscribeForm.js ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button */ "./src/js/components/Button.js");
-/* harmony import */ var _useFormValidation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useFormValidation */ "./src/js/components/useFormValidation.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
+/* harmony import */ var _useFormValidation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useFormValidation */ "./src/js/components/Subscribe/useFormValidation.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -985,7 +877,7 @@ var SubscribeForm = function SubscribeForm(_ref) {
       placeholder: "Enter your email address",
       value: mail,
       onChange: handleChange
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
       className: "subscribe__form-cta",
       name: "contact",
       color: "red",
@@ -1001,10 +893,10 @@ var SubscribeForm = function SubscribeForm(_ref) {
 
 /***/ }),
 
-/***/ "./src/js/components/SubscribeFormControler.js":
-/*!*****************************************************!*\
-  !*** ./src/js/components/SubscribeFormControler.js ***!
-  \*****************************************************/
+/***/ "./src/js/components/Subscribe/SubscribeFormControler.js":
+/*!***************************************************************!*\
+  !*** ./src/js/components/Subscribe/SubscribeFormControler.js ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1012,8 +904,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _SubscribeForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SubscribeForm */ "./src/js/components/SubscribeForm.js");
-/* harmony import */ var _SubscribeFormSuccess__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubscribeFormSuccess */ "./src/js/components/SubscribeFormSuccess.js");
+/* harmony import */ var _SubscribeForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SubscribeForm */ "./src/js/components/Subscribe/SubscribeForm.js");
+/* harmony import */ var _SubscribeFormSuccess__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SubscribeFormSuccess */ "./src/js/components/Subscribe/SubscribeFormSuccess.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -1053,10 +945,10 @@ var SubscribeFormControler = function SubscribeFormControler() {
 
 /***/ }),
 
-/***/ "./src/js/components/SubscribeFormSuccess.js":
-/*!***************************************************!*\
-  !*** ./src/js/components/SubscribeFormSuccess.js ***!
-  \***************************************************/
+/***/ "./src/js/components/Subscribe/SubscribeFormSuccess.js":
+/*!*************************************************************!*\
+  !*** ./src/js/components/Subscribe/SubscribeFormSuccess.js ***!
+  \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1077,10 +969,10 @@ var SubscribeFormSuccess = function SubscribeFormSuccess() {
 
 /***/ }),
 
-/***/ "./src/js/components/useFormValidation.js":
-/*!************************************************!*\
-  !*** ./src/js/components/useFormValidation.js ***!
-  \************************************************/
+/***/ "./src/js/components/Subscribe/useFormValidation.js":
+/*!**********************************************************!*\
+  !*** ./src/js/components/Subscribe/useFormValidation.js ***!
+  \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -1173,6 +1065,114 @@ var useFormValidation = function useFormValidation(callback) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useFormValidation);
+
+/***/ }),
+
+/***/ "./src/js/components/shared/Button.js":
+/*!********************************************!*\
+  !*** ./src/js/components/shared/Button.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+var Button = function Button(_ref) {
+  var type = _ref.type,
+      className = _ref.className,
+      name = _ref.name,
+      color = _ref.color,
+      text = _ref.text,
+      label = _ref.label;
+  return type === 'anchor' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+    href: "#",
+    className: "".concat(className, " btn--").concat(name, " btn--").concat(color),
+    children: text
+  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
+    className: "".concat(className, " btn--").concat(name, " btn--").concat(color),
+    "aria-label": label ? label : null,
+    children: text
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
+
+/***/ }),
+
+/***/ "./src/js/components/shared/Icon.js":
+/*!******************************************!*\
+  !*** ./src/js/components/shared/Icon.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_icomoon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-icomoon */ "./node_modules/react-icomoon/dist/index.js");
+/* harmony import */ var react_icomoon__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_icomoon__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var iconSet = __webpack_require__(/*! ../../selection.json */ "./src/js/selection.json");
+
+var Icon = function Icon(_ref) {
+  var name = _ref.name,
+      size = _ref.size,
+      color = _ref.color,
+      customStyle = _ref.customStyle;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)((react_icomoon__WEBPACK_IMPORTED_MODULE_0___default()), {
+    iconSet: iconSet,
+    disableFill: "true",
+    icon: name,
+    size: size,
+    color: color,
+    style: customStyle
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
+
+/***/ }),
+
+/***/ "./src/js/components/shared/Logo.js":
+/*!******************************************!*\
+  !*** ./src/js/components/shared/Logo.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _assets_img_logo_bookmark_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../assets/img/logo-bookmark.svg */ "./src/assets/img/logo-bookmark.svg");
+/* harmony import */ var _assets_img_logo_bookmark_white_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/img/logo-bookmark-white.svg */ "./src/assets/img/logo-bookmark-white.svg");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var Logo = function Logo(_ref) {
+  var className = _ref.className,
+      color = _ref.color,
+      altText = _ref.altText;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+    href: "#",
+    className: "".concat(className, "__logo"),
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+      src: color === 'white' ? _assets_img_logo_bookmark_white_svg__WEBPACK_IMPORTED_MODULE_1__.default : _assets_img_logo_bookmark_svg__WEBPACK_IMPORTED_MODULE_0__.default,
+      alt: altText,
+      className: "".concat(className, "__logo-img")
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Logo);
 
 /***/ }),
 

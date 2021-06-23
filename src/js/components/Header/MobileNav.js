@@ -1,5 +1,5 @@
-import Icon from './Icon';
-import Button from './Button';
+import Icon from '../shared/Icon';
+import Button from '../shared/Button';
 
 const MobileNav = () => {
     return ( 

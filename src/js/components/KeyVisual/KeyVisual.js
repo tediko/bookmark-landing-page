@@ -1,5 +1,5 @@
-import Header from './Header';
-import Button from './Button';
+import Header from '../Header/Header';
+import Button from '../shared/Button';
 
 const KeyVisual = () => {
     return ( 
