@@ -674,6 +674,9 @@ button:focus-visible {
     width: 100%;
     cursor: pointer;
   }
+  .features__tab-label:hover {
+    color: #fa5757;
+  }
 }
 .features__tab-label::before {
   position: absolute;

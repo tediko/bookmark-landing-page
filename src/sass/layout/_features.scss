@@ -103,6 +103,10 @@
             border-top: unset;
             width: 100%;
             cursor: pointer;
+
+            &:hover {
+                color: $c-red-soft;
+            }
         }
 
         &::before {
