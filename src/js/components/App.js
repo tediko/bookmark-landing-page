@@ -8,6 +8,7 @@ import Footer from './Footer/Footer';
 function App() {
     return (
         <div className="main-container">
+            <a href="#features" className="skip-to-content-link">Skip to content</a>
             <KeyVisual />
             <Features />
             <Extensions />
@@ -18,4 +19,4 @@ function App() {
     );
 }
   
-export default App;  
+export default App;
