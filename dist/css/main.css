@@ -141,6 +141,22 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:focus {
+  outline: none;
+}
+a:focus-visible {
+  outline: 2px dashed #fa5757;
+  outline-offset: 2px;
+}
+
+/* Button elements */
+button:focus {
+  outline: none;
+}
+button:focus-visible {
+  outline: 2px dashed #fa5757;
+  outline-offset: 2px;
+}
 
 /* Spacing */
 .container {
@@ -360,6 +376,13 @@ a {
   font-weight: 500;
   font-size: 0.85rem;
   border-radius: 5px;
+}
+.btn:focus, .btn--contact:focus, .btn--install:focus, .btn--info:focus, .btn--intro:focus, .btn--login-desktop:focus, .btn--login-mobile:focus {
+  outline: none;
+}
+.btn:focus-visible, .btn--contact:focus-visible, .btn--install:focus-visible, .btn--info:focus-visible, .btn--intro:focus-visible, .btn--login-desktop:focus-visible, .btn--login-mobile:focus-visible {
+  outline: 2px dashed #fa5757;
+  outline-offset: 2px;
 }
 .btn--login-mobile {
   padding: 9px 0;

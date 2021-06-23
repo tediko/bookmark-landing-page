@@ -14,6 +14,15 @@
     font-weight: 500;
     font-size: 0.85rem;
     border-radius: 5px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: 2px dashed $c-red-soft;
+        outline-offset: 2px;
+    }
     
     &--login-mobile {
         @extend #{$root};
