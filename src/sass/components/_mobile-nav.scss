@@ -84,6 +84,14 @@
         width: 100%;
         padding: 0 32px;
         height: 77vh;
+
+        &.is-active {
+            animation: navSlideIn 1000ms ease-in forwards;
+        }
+
+        &.is-closing {
+            animation: navSlideOut 1000ms ease-in forwards;
+        }
     }
 
     &__list {

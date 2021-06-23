@@ -40,6 +40,55 @@ ol {
 /* Fonts */
 /* Media query breakpoints */
 /* Mixin to manage responsive breakpoints */
+/* Header section */
+@-webkit-keyframes navSlideIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes navSlideIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes navSlideOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+@keyframes navSlideOut {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
 /* Subscribe section */
 @-webkit-keyframes formError {
   0% {
@@ -336,6 +385,14 @@ button:focus-visible {
   width: 100%;
   padding: 0 32px;
   height: 77vh;
+}
+.mobile-nav__wrapper.is-active {
+  -webkit-animation: navSlideIn 1000ms ease-in forwards;
+          animation: navSlideIn 1000ms ease-in forwards;
+}
+.mobile-nav__wrapper.is-closing {
+  -webkit-animation: navSlideOut 1000ms ease-in forwards;
+          animation: navSlideOut 1000ms ease-in forwards;
 }
 .mobile-nav__list {
   display: flex;
