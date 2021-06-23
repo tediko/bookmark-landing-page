@@ -89,6 +89,38 @@ ol {
     transform: translateY(50px);
   }
 }
+@-webkit-keyframes menuOverlayIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menuOverlayIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes menuOverlayOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes menuOverlayOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* Subscribe section */
 @-webkit-keyframes formError {
   0% {
@@ -304,6 +336,7 @@ button:focus-visible {
   left: 0;
   width: 100%;
   padding: 40px 32px 32px 32px;
+  z-index: 999;
 }
 @media (min-width: 768px) {
   .header {
@@ -322,6 +355,19 @@ button:focus-visible {
   .header__logo {
     margin-left: 6px;
   }
+}
+.header__menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation: menuOverlayIn 1000ms ease-in-out forwards;
+          animation: menuOverlayIn 1000ms ease-in-out forwards;
+}
+.header__menu-overlay.hide {
+  -webkit-animation: menuOverlayOut 1000ms ease-in-out forwards;
+          animation: menuOverlayOut 1000ms ease-in-out forwards;
 }
 
 .mobile-nav__menu {

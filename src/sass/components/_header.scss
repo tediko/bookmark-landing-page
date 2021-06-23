@@ -7,6 +7,7 @@
     left: 0;
     width: 100%;
     padding: 40px 32px 32px 32px;
+    z-index: 999;
 
     @include breakpoint(md) {
         padding: 48px 32px 32px 32px;
@@ -23,6 +24,19 @@
 
         @include breakpoint(md) {
             margin-left: 6px;
+        }
+    }
+
+    &__menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+        opacity: 0;
+        animation: menuOverlayIn 1000ms ease-in-out forwards;
+        
+        &.hide {
+            animation: menuOverlayOut 1000ms ease-in-out forwards;
         }
     }
 }
