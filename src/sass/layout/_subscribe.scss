@@ -94,7 +94,8 @@
         }
 
         &:focus-visible {
-            outline: none;
+            outline: 2px dashed $c-red-soft;
+            outline-offset: 2px;
         }
     }
 

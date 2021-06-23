@@ -1139,7 +1139,8 @@ button:focus-visible {
   outline: none;
 }
 .subscribe__form-input:focus-visible {
-  outline: none;
+  outline: 2px dashed #fa5757;
+  outline-offset: 2px;
 }
 .subscribe__form-cta {
   flex: 1;
