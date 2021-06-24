@@ -1,10 +1,13 @@
+import useStickyNav from '../Header/useStickyNav';
 import Header from '../Header/Header';
 import Button from '../shared/Button';
 
 const KeyVisual = () => {
+    const [containerRef, isIntersecting, isNotIntersecting] = useStickyNav();
+
     return ( 
-        <section className="kv">
-            <Header />
+        <section className="kv" ref={containerRef}>
+            <Header scrollIn={isIntersecting} scrollOut={isNotIntersecting} />
             <div className="kv__container container">
                 <div className="kv__illustration"></div>
                 <div className="kv__intro">
