@@ -7,6 +7,7 @@ const useToggleMenu = () => {
     const [isTransitionend, setIsTransitionend] = useState(true);
     
     const tabletBreakpoint = 768;
+    let isMenuOpen = false;
     let timer;
     let transitionDuration = 1000;
 
@@ -34,6 +35,7 @@ const useToggleMenu = () => {
     * Function to display menu
     */
     const showMenu = () => {
+        isMenuOpen = true;
         setIsTransitionend(false);
         setIsOpen(true);
         setIsExpanded(true);
@@ -49,13 +51,14 @@ const useToggleMenu = () => {
     * Function to hide menu
     */
     const closeMenu = () => {
+        isMenuOpen = true;
         setIsTransitionend(false);
         setIsExpanded(false);
         setIsClosing(true);
-
+        preventScroll(false);
+        
         
         timer = setTimeout(() => {
-            preventScroll(false);
             setIsTransitionend(true);
             setIsClosing(false);
             setIsOpen(false);
@@ -70,7 +73,7 @@ const useToggleMenu = () => {
     * @param    {Boolean} allowScroll    Boolean value
     */
     const preventScroll = (allowScroll) => {
-        if (!isOpen) return false;
+        if (!isMenuOpen) return false;
         
         if (allowScroll) {
             document.body.style.top = `-${window.scrollY}px`;
@@ -80,7 +83,7 @@ const useToggleMenu = () => {
             document.body.style.position = '';
             document.body.style.top = '';
             window.scrollTo(0, parseInt(scrollY || '0') * -1);
-            document.documentElement.style.scrollBehavior = '';
+            document.documentElement.style.scrollBehavior = 'auto';
         }
     }
 
