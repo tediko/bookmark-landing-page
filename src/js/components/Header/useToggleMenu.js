@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const useToggleMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
     const [isTransitionend, setIsTransitionend] = useState(true);
+    const isMenuOpen = useRef(false);
     
     const tabletBreakpoint = 768;
-    let isMenuOpen = false;
     let timer;
     let transitionDuration = 1000;
 
@@ -35,7 +35,7 @@ const useToggleMenu = () => {
     * Function to display menu
     */
     const showMenu = () => {
-        isMenuOpen = true;
+        isMenuOpen.current = true;
         setIsTransitionend(false);
         setIsOpen(true);
         setIsExpanded(true);
@@ -51,7 +51,6 @@ const useToggleMenu = () => {
     * Function to hide menu
     */
     const closeMenu = () => {
-        isMenuOpen = true;
         setIsTransitionend(false);
         setIsExpanded(false);
         setIsClosing(true);
@@ -62,6 +61,7 @@ const useToggleMenu = () => {
             setIsTransitionend(true);
             setIsClosing(false);
             setIsOpen(false);
+            isMenuOpen.current = false;
 
 
             timer = null;

@@ -934,8 +934,8 @@ var useToggleMenu = function useToggleMenu() {
       isTransitionend = _useState8[0],
       setIsTransitionend = _useState8[1];
 
+  var isMenuOpen = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);
   var tabletBreakpoint = 768;
-  var isMenuOpen = false;
   var timer;
   var transitionDuration = 1000;
   /**
@@ -965,7 +965,7 @@ var useToggleMenu = function useToggleMenu() {
 
 
   var showMenu = function showMenu() {
-    isMenuOpen = true;
+    isMenuOpen.current = true;
     setIsTransitionend(false);
     setIsOpen(true);
     setIsExpanded(true);
@@ -981,7 +981,6 @@ var useToggleMenu = function useToggleMenu() {
 
 
   var closeMenu = function closeMenu() {
-    isMenuOpen = true;
     setIsTransitionend(false);
     setIsExpanded(false);
     setIsClosing(true);
@@ -990,6 +989,7 @@ var useToggleMenu = function useToggleMenu() {
       setIsTransitionend(true);
       setIsClosing(false);
       setIsOpen(false);
+      isMenuOpen.current = false;
       timer = null;
     }, transitionDuration);
   };
