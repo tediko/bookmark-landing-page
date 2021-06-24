@@ -636,10 +636,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _MobileNav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MobileNav */ "./src/js/components/Header/MobileNav.js");
-/* harmony import */ var _DesktopNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DesktopNav */ "./src/js/components/Header/DesktopNav.js");
-/* harmony import */ var _shared_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Logo */ "./src/js/components/shared/Logo.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _useToggleMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useToggleMenu */ "./src/js/components/Header/useToggleMenu.js");
+/* harmony import */ var _MobileNav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MobileNav */ "./src/js/components/Header/MobileNav.js");
+/* harmony import */ var _DesktopNav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DesktopNav */ "./src/js/components/Header/DesktopNav.js");
+/* harmony import */ var _shared_Logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/Logo */ "./src/js/components/shared/Logo.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -659,7 +660,16 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var Header = function Header() {
+  var _useToggleMenu = (0,_useToggleMenu__WEBPACK_IMPORTED_MODULE_1__.default)(),
+      handleToggle = _useToggleMenu.handleToggle,
+      restoreToDefault = _useToggleMenu.restoreToDefault,
+      isOpen = _useToggleMenu.isOpen,
+      isClosing = _useToggleMenu.isClosing,
+      isExpanded = _useToggleMenu.isExpanded,
+      tabletBreakpoint = _useToggleMenu.tabletBreakpoint;
+
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(window.innerWidth),
       _useState2 = _slicedToArray(_useState, 2),
       windowWidth = _useState2[0],
@@ -669,16 +679,24 @@ var Header = function Header() {
     window.addEventListener('resize', function () {
       return setWindowWidth(window.innerWidth);
     });
+    windowWidth >= tabletBreakpoint ? restoreToDefault() : '';
   });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("header", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("header", {
     className: "header",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "header__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_shared_Logo__WEBPACK_IMPORTED_MODULE_3__.default, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_shared_Logo__WEBPACK_IMPORTED_MODULE_4__.default, {
         className: "header",
-        color: "black",
+        color: "".concat(isOpen ? 'white' : 'black'),
         altText: "Bookmark - Home page"
-      }), windowWidth > 768 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_DesktopNav__WEBPACK_IMPORTED_MODULE_2__.default, {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_MobileNav__WEBPACK_IMPORTED_MODULE_1__.default, {})]
+      }), windowWidth >= tabletBreakpoint ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_DesktopNav__WEBPACK_IMPORTED_MODULE_3__.default, {}) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_MobileNav__WEBPACK_IMPORTED_MODULE_2__.default, {
+        handleToggle: handleToggle,
+        isOpen: isOpen,
+        isClosing: isClosing,
+        isExpanded: isExpanded
+      }), isOpen ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("span", {
+        className: "header__menu-overlay ".concat(isClosing ? 'hide' : '')
+      }) : null]
     })
   });
 };
@@ -705,19 +723,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var MobileNav = function MobileNav() {
+var MobileNav = function MobileNav(_ref) {
+  var handleToggle = _ref.handleToggle,
+      isOpen = _ref.isOpen,
+      isClosing = _ref.isClosing,
+      isExpanded = _ref.isExpanded;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("nav", {
     className: "header__nav mobile-nav",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-      className: "mobile-nav__menu",
+      className: "mobile-nav__menu ".concat(isOpen ? 'is-active' : ''),
       "aria-label": "Menu toggle",
-      "aria-expanded": "false",
+      "aria-expanded": isExpanded,
       "aria-controls": "nav-list",
+      onClick: handleToggle,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
         className: "mobile-nav__menu-bars"
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "mobile-nav__wrapper",
+      className: "mobile-nav__wrapper ".concat(isOpen ? 'is-active' : '', " ").concat(isClosing ? 'is-closing' : ''),
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
         className: "mobile-nav__list",
         id: "nav-list",
@@ -776,6 +799,141 @@ var MobileNav = function MobileNav() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MobileNav);
+
+/***/ }),
+
+/***/ "./src/js/components/Header/useToggleMenu.js":
+/*!***************************************************!*\
+  !*** ./src/js/components/Header/useToggleMenu.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var useToggleMenu = function useToggleMenu() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      isOpen = _useState2[0],
+      setIsOpen = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      isClosing = _useState4[0],
+      setIsClosing = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState6 = _slicedToArray(_useState5, 2),
+      isExpanded = _useState6[0],
+      setIsExpanded = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
+      _useState8 = _slicedToArray(_useState7, 2),
+      isTransitionend = _useState8[0],
+      setIsTransitionend = _useState8[1];
+
+  var tabletBreakpoint = 768;
+  var timer;
+  var transitionDuration = 1000;
+  /**
+  * Function to toggle showMenu() and closeMenu() depending
+  * on isOpen state. It doesn't run untill isTransitionend is true.
+  */
+
+  var handleToggle = function handleToggle() {
+    if (!isTransitionend) return;
+    !isOpen ? showMenu() : closeMenu();
+  };
+  /**
+  * Function to restore all states to it default values.
+  */
+
+
+  var restoreToDefault = function restoreToDefault() {
+    setIsOpen(false);
+    setIsClosing(false);
+    setIsExpanded(false);
+    setIsTransitionend(true);
+    preventScroll(false);
+  };
+  /**
+  * Function to display menu
+  */
+
+
+  var showMenu = function showMenu() {
+    setIsTransitionend(false);
+    setIsOpen(true);
+    setIsExpanded(true);
+    preventScroll(true);
+    timer = setTimeout(function () {
+      setIsTransitionend(true);
+      timer = null;
+    }, transitionDuration);
+  };
+  /**
+  * Function to hide menu
+  */
+
+
+  var closeMenu = function closeMenu() {
+    setIsTransitionend(false);
+    setIsExpanded(false);
+    setIsClosing(true);
+    timer = setTimeout(function () {
+      preventScroll(false);
+      setIsTransitionend(true);
+      setIsClosing(false);
+      setIsOpen(false);
+      timer = null;
+    }, transitionDuration);
+  };
+  /**
+  * Function to prevent window from scrolling
+  * @param    {Boolean} allowScroll    Boolean value
+  */
+
+
+  var preventScroll = function preventScroll(allowScroll) {
+    if (allowScroll) {
+      document.body.style.top = "-".concat(window.scrollY, "px");
+      document.body.style.position = 'fixed';
+    } else {
+      var scrollY = document.body.style.top;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      document.documentElement.style.scrollBehavior = '';
+    }
+  };
+
+  return {
+    handleToggle: handleToggle,
+    restoreToDefault: restoreToDefault,
+    isOpen: isOpen,
+    isClosing: isClosing,
+    isExpanded: isExpanded,
+    tabletBreakpoint: tabletBreakpoint
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useToggleMenu);
 
 /***/ }),
 
