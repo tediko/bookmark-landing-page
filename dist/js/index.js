@@ -661,7 +661,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var Header = function Header() {
+var Header = function Header(_ref) {
+  var scrollIn = _ref.scrollIn,
+      scrollOut = _ref.scrollOut;
+
   var _useToggleMenu = (0,_useToggleMenu__WEBPACK_IMPORTED_MODULE_1__.default)(),
       handleToggle = _useToggleMenu.handleToggle,
       restoreToDefault = _useToggleMenu.restoreToDefault,
@@ -682,7 +685,7 @@ var Header = function Header() {
     windowWidth >= tabletBreakpoint ? restoreToDefault() : '';
   });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("header", {
-    className: "header",
+    className: "header ".concat(scrollIn ? 'scroll-in' : '', " ").concat(scrollOut ? 'scroll-out' : ''),
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "header__container container",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_shared_Logo__WEBPACK_IMPORTED_MODULE_4__.default, {
@@ -802,6 +805,89 @@ var MobileNav = function MobileNav(_ref) {
 
 /***/ }),
 
+/***/ "./src/js/components/Header/useStickyNav.js":
+/*!**************************************************!*\
+  !*** ./src/js/components/Header/useStickyNav.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var useStickyNav = function useStickyNav() {
+  var containerRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      isIntersecting = _useState2[0],
+      setIsIntersecting = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      isNotIntersecting = _useState4[0],
+      setIsNotIntersecting = _useState4[1];
+
+  var transitionDuration = 300;
+  var isInitialized = false;
+  var timer;
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    navObserver(containerRef.current);
+  }, [containerRef]);
+  /**
+  * Function to start observe element and show/hide header.
+  * @param    {Element} element    Element to observe
+  */
+
+  var navObserver = function navObserver(element) {
+    if (!element) return false;
+    var options = {
+      threshold: 0.3
+    };
+    var observer = new IntersectionObserver(function (entries, observer) {
+      if (isInitialized) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) {
+            setIsIntersecting(true);
+            setIsNotIntersecting(false);
+          } else {
+            setIsNotIntersecting(true);
+            timer = setTimeout(function () {
+              setIsIntersecting(false);
+              setIsNotIntersecting(false);
+              timer = null;
+            }, transitionDuration);
+          }
+        });
+      }
+
+      isInitialized = true;
+    }, options);
+    observer.observe(element);
+  };
+
+  return [containerRef, isIntersecting, isNotIntersecting];
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useStickyNav);
+
+/***/ }),
+
 /***/ "./src/js/components/Header/useToggleMenu.js":
 /*!***************************************************!*\
   !*** ./src/js/components/Header/useToggleMenu.js ***!
@@ -849,6 +935,7 @@ var useToggleMenu = function useToggleMenu() {
       setIsTransitionend = _useState8[1];
 
   var tabletBreakpoint = 768;
+  var isMenuOpen = false;
   var timer;
   var transitionDuration = 1000;
   /**
@@ -878,6 +965,7 @@ var useToggleMenu = function useToggleMenu() {
 
 
   var showMenu = function showMenu() {
+    isMenuOpen = true;
     setIsTransitionend(false);
     setIsOpen(true);
     setIsExpanded(true);
@@ -893,11 +981,12 @@ var useToggleMenu = function useToggleMenu() {
 
 
   var closeMenu = function closeMenu() {
+    isMenuOpen = true;
     setIsTransitionend(false);
     setIsExpanded(false);
     setIsClosing(true);
+    preventScroll(false);
     timer = setTimeout(function () {
-      preventScroll(false);
       setIsTransitionend(true);
       setIsClosing(false);
       setIsOpen(false);
@@ -911,7 +1000,7 @@ var useToggleMenu = function useToggleMenu() {
 
 
   var preventScroll = function preventScroll(allowScroll) {
-    if (!isOpen) return false;
+    if (!isMenuOpen) return false;
 
     if (allowScroll) {
       document.body.style.top = "-".concat(window.scrollY, "px");
@@ -921,7 +1010,7 @@ var useToggleMenu = function useToggleMenu() {
       document.body.style.position = '';
       document.body.style.top = '';
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
-      document.documentElement.style.scrollBehavior = '';
+      document.documentElement.style.scrollBehavior = 'auto';
     }
   };
 
@@ -949,38 +1038,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Header/Header */ "./src/js/components/Header/Header.js");
-/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Header_useStickyNav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Header/useStickyNav */ "./src/js/components/Header/useStickyNav.js");
+/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Header/Header */ "./src/js/components/Header/Header.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
 
 
 var KeyVisual = function KeyVisual() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("section", {
+  var _useStickyNav = (0,_Header_useStickyNav__WEBPACK_IMPORTED_MODULE_0__.default)(),
+      _useStickyNav2 = _slicedToArray(_useStickyNav, 3),
+      containerRef = _useStickyNav2[0],
+      isIntersecting = _useStickyNav2[1],
+      isNotIntersecting = _useStickyNav2[2];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("section", {
     className: "kv",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Header_Header__WEBPACK_IMPORTED_MODULE_0__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    ref: containerRef,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Header_Header__WEBPACK_IMPORTED_MODULE_1__.default, {
+      scrollIn: isIntersecting,
+      scrollOut: isNotIntersecting
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "kv__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "kv__illustration"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         className: "kv__intro",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
           className: "kv__title heading--xxl",
           children: "A Simple Bookmark Manager"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
           className: "kv__text paragraph--l",
           children: "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "kv__cta-wrapper",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
             className: "kv__cta",
             name: "intro",
             color: "blue",
             text: "Get it on Chrome",
             label: "Add extension to Chrome"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
             className: "kv__cta",
             name: "intro",
             color: "gray",
