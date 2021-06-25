@@ -16,5 +16,12 @@
         font-size: 0.83rem;
         letter-spacing: 0.08rem;
         color: $c-blue-dark;
+        transition: color 350ms ease-in-out;
+
+        @include breakpoint(md) {
+            &:hover {
+                color: $c-red-soft;
+            }
+        }
     }
 }

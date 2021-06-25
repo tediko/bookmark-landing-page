@@ -540,6 +540,12 @@ button:focus-visible {
   font-size: 0.83rem;
   letter-spacing: 0.08rem;
   color: #252b46;
+  transition: color 350ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .desktop-nav__item:hover {
+    color: #fa5757;
+  }
 }
 
 .btn, .btn--contact, .btn--install, .btn--info, .btn--intro, .btn--login-desktop, .btn--login-mobile {
