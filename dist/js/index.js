@@ -1000,7 +1000,7 @@ var useToggleMenu = function useToggleMenu() {
 
 
   var preventScroll = function preventScroll(allowScroll) {
-    if (!isMenuOpen) return false;
+    if (!isMenuOpen.current) return false;
 
     if (allowScroll) {
       document.body.style.top = "-".concat(window.scrollY, "px");

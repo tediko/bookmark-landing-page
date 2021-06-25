@@ -73,7 +73,7 @@ const useToggleMenu = () => {
     * @param    {Boolean} allowScroll    Boolean value
     */
     const preventScroll = (allowScroll) => {
-        if (!isMenuOpen) return false;
+        if (!isMenuOpen.current) return false;
         
         if (allowScroll) {
             document.body.style.top = `-${window.scrollY}px`;
