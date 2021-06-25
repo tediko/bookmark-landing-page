@@ -188,6 +188,16 @@
             margin-top: 33px;
             padding: 0;
         }
+
+        &.animation {
+            #{$root}__tab-illustration-img {
+                animation: tabBackgroundSlide 1000ms ease-in-out;
+            }
+
+            #{$root}__tab-info {
+                animation: tabInfoSlide 1000ms ease-in-out;
+            }
+        }
     }
 
     &__tab-illustration {
