@@ -936,6 +936,9 @@ button:focus-visible {
   color: #737373;
   transition: color 350ms ease-in;
 }
+.features__tab-label.active {
+  pointer-events: none;
+}
 @media (min-width: 768px) {
   .features__tab-label {
     display: flex;
