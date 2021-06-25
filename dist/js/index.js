@@ -396,71 +396,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _FeaturesTabControls__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FeaturesTabControls */ "./src/js/components/Features/FeaturesTabControls.js");
+/* harmony import */ var _useFeaturesToggle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useFeaturesToggle */ "./src/js/components/Features/useFeaturesToggle.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
 
 
 
 
 var Features = function Features() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("section", {
+  var _useFeaturesToggle = (0,_useFeaturesToggle__WEBPACK_IMPORTED_MODULE_2__.default)(),
+      _useFeaturesToggle2 = _slicedToArray(_useFeaturesToggle, 3),
+      handleFocus = _useFeaturesToggle2[0],
+      isChanging = _useFeaturesToggle2[1],
+      data = _useFeaturesToggle2[2];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("section", {
     className: "features",
     id: "features",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "features__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
         className: "features__title heading--xl",
         children: "Features"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
         className: "features__text paragraph--l",
         children: "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "features__tab-controls",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-          type: "radio",
-          name: "tab",
-          id: "bookmarking",
-          className: "features__tab-input",
-          defaultChecked: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
-          htmlFor: "bookmarking",
-          className: "features__tab-label",
-          children: "Simple Bookmarking"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-          type: "radio",
-          name: "tab",
-          id: "searching",
-          className: "features__tab-input"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
-          htmlFor: "searching",
-          className: "features__tab-label",
-          children: "Speedy Searching"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-          type: "radio",
-          name: "tab",
-          id: "sharing",
-          className: "features__tab-input"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
-          htmlFor: "sharing",
-          className: "features__tab-label",
-          children: "Easy Sharing"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-          className: "features__tab-bar"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
-          className: "features__tab-overlay"
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-        className: "features__tab-content",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-          className: "features__tab-illustration"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_FeaturesTabControls__WEBPACK_IMPORTED_MODULE_1__.default, {
+        onFocus: handleFocus,
+        isChanging: isChanging
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "features__tab-content ".concat(isChanging ? 'animation' : ''),
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "features__tab-illustration",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            className: "features__tab-illustration-img",
+            style: {
+              backgroundImage: data.img,
+              backgroundSize: data.imgSize
+            }
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "features__tab-info",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h2", {
             className: "features__tab-title heading--xl",
-            children: "Bookmark in one click"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+            children: data.title
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
             className: "features__tab-text paragraph--l",
-            children: "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+            children: data.text
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
             type: "anchor",
             className: "features__tab-cta",
             name: "info",
@@ -474,6 +471,252 @@ var Features = function Features() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Features);
+
+/***/ }),
+
+/***/ "./src/js/components/Features/FeaturesTabControls.js":
+/*!***********************************************************!*\
+  !*** ./src/js/components/Features/FeaturesTabControls.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _FeaturesTabInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FeaturesTabInput */ "./src/js/components/Features/FeaturesTabInput.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+var FeaturesTabControls = function FeaturesTabControls(_ref) {
+  var onFocus = _ref.onFocus,
+      isChanging = _ref.isChanging;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([{
+    index: 0,
+    idName: 'bookmarking',
+    isChecked: true,
+    labelText: 'Simple Bookmarking'
+  }, {
+    index: 1,
+    idName: 'searching',
+    isChecked: false,
+    labelText: 'Speedy Searching'
+  }, {
+    index: 2,
+    idName: 'sharing',
+    isChecked: false,
+    labelText: 'Easy Sharing'
+  }]),
+      _useState2 = _slicedToArray(_useState, 2),
+      data = _useState2[0],
+      setData = _useState2[1];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: "features__tab-controls",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_FeaturesTabInput__WEBPACK_IMPORTED_MODULE_1__.default, {
+      tabs: data,
+      onFocus: onFocus,
+      isChanging: isChanging
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+      className: "features__tab-bar"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+      className: "features__tab-overlay"
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FeaturesTabControls);
+
+/***/ }),
+
+/***/ "./src/js/components/Features/FeaturesTabInput.js":
+/*!********************************************************!*\
+  !*** ./src/js/components/Features/FeaturesTabInput.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+var FeaturesTabInput = function FeaturesTabInput(_ref) {
+  var tabs = _ref.tabs,
+      onFocus = _ref.onFocus,
+      isChanging = _ref.isChanging;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: tabs.map(function (tab) {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+          type: "radio",
+          name: "tab",
+          id: tab.idName,
+          className: "features__tab-input",
+          defaultChecked: tab.isChecked ? true : null,
+          onFocus: onFocus,
+          "data-index": tab.index
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
+          htmlFor: tab.idName,
+          className: "features__tab-label ".concat(isChanging ? 'active' : ''),
+          children: tab.labelText
+        })]
+      }, tab.index);
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FeaturesTabInput);
+
+/***/ }),
+
+/***/ "./src/js/components/Features/tabsData.js":
+/*!************************************************!*\
+  !*** ./src/js/components/Features/tabsData.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "tabsData": () => (/* binding */ tabsData)
+/* harmony export */ });
+var tabsData = [{
+  id: 0,
+  title: 'Bookmark in one click',
+  text: "Organize your bookmarks however you like. Our simple drag-and-drop interface \n        gives you complete control over how you manage your favourite sites.",
+  img: "url(/images/illustration-features-tab-1.svg)",
+  imgSize: '89.4%'
+}, {
+  id: 1,
+  title: 'Intelligent search',
+  text: "Our powerful search feature will help you find saved sites in no time at all. \n        No need to trawl through all of your bookmarks.",
+  img: "url(/images/illustration-features-tab-2.svg)",
+  imgSize: '77%'
+}, {
+  id: 2,
+  title: 'Share your bookmarks',
+  text: "Easily share your bookmarks and collections with others. Create a shareable \n        link that you can send at the click of a button.",
+  img: "url(/images/illustration-features-tab-3.svg)",
+  imgSize: '77%'
+}];
+
+/***/ }),
+
+/***/ "./src/js/components/Features/useFeaturesToggle.js":
+/*!*********************************************************!*\
+  !*** ./src/js/components/Features/useFeaturesToggle.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _tabsData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabsData */ "./src/js/components/Features/tabsData.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var useFeaturesToggle = function useFeaturesToggle() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      isChanging = _useState2[0],
+      setIsChanging = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_tabsData__WEBPACK_IMPORTED_MODULE_1__.tabsData[0]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      dataToDisplay = _useState4[0],
+      setDataToDisplay = _useState4[1];
+
+  var prevIndex = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(0);
+  var isTransitionend = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(true);
+  var transitionDuration = 1000;
+  var halfOfTransitionDuration = transitionDuration / 2;
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    window.addEventListener('keydown', checkIfTransitionEnds);
+    return function () {
+      window.removeEventListener('keydown', checkIfTransitionEnds);
+    };
+  });
+  /**
+  * Function to invoke changeTab only when given conditions are met.
+  * @param    {Event} event    Event from user click/focus on element
+  */
+
+  var handleFocus = function handleFocus(event) {
+    var currIndex = parseInt(event.target.dataset.index);
+    if (isChanging || prevIndex.current === currIndex) return false;
+    changeTab(currIndex);
+  };
+  /**
+  * Function to change active tab. 
+  * @param    {Number} currIndex    Value of current index
+  */
+
+
+  var changeTab = function changeTab(currIndex) {
+    prevIndex.current = currIndex;
+    isTransitionend.current = false;
+    setIsChanging(true);
+    setTimeout(function () {
+      setIsChanging(false);
+      isTransitionend.current = true;
+    }, transitionDuration);
+    setTimeout(function () {
+      setDataToDisplay(_tabsData__WEBPACK_IMPORTED_MODULE_1__.tabsData[currIndex]);
+    }, halfOfTransitionDuration);
+  };
+  /**
+  * Function to check if transition has ended. If not - disable switching tabs.
+  * @param    {Event} event    Event from current element
+  */
+
+
+  var checkIfTransitionEnds = function checkIfTransitionEnds(event) {
+    if (!isTransitionend.current) {
+      event.preventDefault();
+    } else {
+      event.returnValue = true;
+    }
+  };
+
+  return [handleFocus, isChanging, dataToDisplay];
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useFeaturesToggle);
 
 /***/ }),
 
