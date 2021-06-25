@@ -95,6 +95,10 @@
         padding: 18px 0;
         color: lighten($c-black, 45);
         transition: color 350ms ease-in;
+
+        &.active {
+            pointer-events: none;
+        }
         
         @include breakpoint(md) {
             display: flex;
