@@ -1213,7 +1213,6 @@ var useToggleMenu = function useToggleMenu() {
   var endPosition = 0;
   var touchSlideLength = 0;
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    console.log(startPosition, endPosition, touchSlideLength, swipeTriggerPoint);
     window.addEventListener('touchstart', getTouchStartPosition);
     window.addEventListener('touchmove', getTouchEndPosition);
     window.addEventListener('touchend', handleToggleOnSwipe);

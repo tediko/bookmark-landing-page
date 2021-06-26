@@ -16,7 +16,6 @@ const useToggleMenu = () => {
     let touchSlideLength = 0;
 
     useEffect(() => {
-        console.log(startPosition, endPosition, touchSlideLength, swipeTriggerPoint);
         window.addEventListener('touchstart', getTouchStartPosition);
         window.addEventListener('touchmove', getTouchEndPosition);
         window.addEventListener('touchend', handleToggleOnSwipe);
