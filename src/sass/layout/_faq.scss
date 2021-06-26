@@ -38,7 +38,6 @@
         margin-top: 50px;
 
         @include breakpoint(md) {
-            gap: 2px;
             max-width: 542px;
             margin-top: 57px;
         }

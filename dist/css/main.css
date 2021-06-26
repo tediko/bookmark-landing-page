@@ -1300,7 +1300,6 @@ button:focus-visible {
 }
 @media (min-width: 768px) {
   .faq__accordion-list {
-    gap: 2px;
     max-width: 542px;
     margin-top: 57px;
   }
