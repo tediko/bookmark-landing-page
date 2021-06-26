@@ -18,7 +18,7 @@ const Features = () => {
                     </div>
                     <div className="features__tab-info">
                         <h2 className="features__tab-title heading--xl">{data.title}</h2>
-                        <p className="features__tab-text paragraph--l">{data.text}</p>
+                        <p className="features__tab-text paragraph--l" aria-live="assertive">{data.text}</p>
                         <Button type="anchor" className="features__tab-cta" name="info" color="blue" text="More Info" />
                     </div>
                 </div>

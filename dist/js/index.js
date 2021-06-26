@@ -483,6 +483,7 @@ var Features = function Features() {
             children: data.title
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
             className: "features__tab-text paragraph--l",
+            "aria-live": "assertive",
             children: data.text
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
             type: "anchor",
