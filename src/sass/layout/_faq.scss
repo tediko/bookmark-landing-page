@@ -71,7 +71,8 @@
         padding: 20px 0;
         background-color: transparent;
         border: none;
-        font-size: clamp(0.935rem, 3vw, 1.126rem);
+        font-family: $ff-primary;
+        font-size: clamp(0.935rem, 3vw, 1rem);
         font-weight: 400;
         text-align: left;
         cursor: pointer;
