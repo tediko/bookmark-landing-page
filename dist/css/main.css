@@ -1143,7 +1143,12 @@ button:focus-visible {
 }
 
 .extensions {
-  padding: 0 32px;
+  padding: 0 12px;
+}
+@media (min-width: 375px) {
+  .extensions {
+    padding: 0 32px;
+  }
 }
 .extensions__container {
   display: flex;
@@ -1155,6 +1160,9 @@ button:focus-visible {
   .extensions__container {
     margin-bottom: 157px;
   }
+}
+.extensions__title {
+  text-align: center;
 }
 .extensions__text {
   text-align: center;

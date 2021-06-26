@@ -2,7 +2,11 @@
 
 .extensions {
     $root: &;
-    padding: 0 32px;
+    padding: 0 12px;
+
+    @include breakpoint(xs) {
+        padding: 0 32px;
+    }
 
     &__container {
         display: flex;
@@ -13,6 +17,10 @@
         @include breakpoint(lg) {
             margin-bottom: 157px;
         }
+    }
+
+    &__title {
+        text-align: center;
     }
 
     &__text {
