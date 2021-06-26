@@ -566,24 +566,22 @@ var FeaturesTabInput = function FeaturesTabInput(_ref) {
   var tabs = _ref.tabs,
       onFocus = _ref.onFocus,
       isChanging = _ref.isChanging;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: tabs.map(function (tab) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-          type: "radio",
-          name: "tab",
-          id: tab.idName,
-          className: "features__tab-input",
-          defaultChecked: tab.isChecked ? true : null,
-          onFocus: onFocus,
-          "data-index": tab.index
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
-          htmlFor: tab.idName,
-          className: "features__tab-label ".concat(isChanging ? 'active' : ''),
-          children: tab.labelText
-        })]
-      }, tab.index);
-    })
+  return tabs.map(function (tab) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+        type: "radio",
+        name: "tab",
+        id: tab.idName,
+        className: "features__tab-input",
+        defaultChecked: tab.isChecked ? true : null,
+        onFocus: onFocus,
+        "data-index": tab.index
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
+        htmlFor: tab.idName,
+        className: "features__tab-label ".concat(isChanging ? 'active' : ''),
+        children: tab.labelText
+      })]
+    }, tab.index);
   });
 };
 
