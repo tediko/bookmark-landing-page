@@ -603,6 +603,7 @@ var FeaturesTabInput = function FeaturesTabInput(_ref) {
         className: "features__tab-input",
         defaultChecked: tab.isChecked ? true : null,
         onFocus: onFocus,
+        onClick: onFocus,
         "data-index": tab.index
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
         htmlFor: tab.idName,
