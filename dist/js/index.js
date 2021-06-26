@@ -12,13 +12,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _KeyVisual_KeyVisual__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./KeyVisual/KeyVisual */ "./src/js/components/KeyVisual/KeyVisual.js");
-/* harmony import */ var _Features_Features__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Features/Features */ "./src/js/components/Features/Features.js");
-/* harmony import */ var _Extensions_Extensions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Extensions/Extensions */ "./src/js/components/Extensions/Extensions.js");
-/* harmony import */ var _Faq_Faq__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Faq/Faq */ "./src/js/components/Faq/Faq.js");
-/* harmony import */ var _Subscribe_Subscribe__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Subscribe/Subscribe */ "./src/js/components/Subscribe/Subscribe.js");
-/* harmony import */ var _Footer_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Footer/Footer */ "./src/js/components/Footer/Footer.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header/Header */ "./src/js/components/Header/Header.js");
+/* harmony import */ var _KeyVisual_KeyVisual__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./KeyVisual/KeyVisual */ "./src/js/components/KeyVisual/KeyVisual.js");
+/* harmony import */ var _Features_Features__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Features/Features */ "./src/js/components/Features/Features.js");
+/* harmony import */ var _Extensions_Extensions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Extensions/Extensions */ "./src/js/components/Extensions/Extensions.js");
+/* harmony import */ var _Faq_Faq__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Faq/Faq */ "./src/js/components/Faq/Faq.js");
+/* harmony import */ var _Subscribe_Subscribe__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Subscribe/Subscribe */ "./src/js/components/Subscribe/Subscribe.js");
+/* harmony import */ var _Footer_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Footer/Footer */ "./src/js/components/Footer/Footer.js");
+/* harmony import */ var _Header_useStickyNav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Header/useStickyNav */ "./src/js/components/Header/useStickyNav.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
 
 
 
@@ -29,13 +45,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+  var _useStickyNav = (0,_Header_useStickyNav__WEBPACK_IMPORTED_MODULE_7__.default)(),
+      _useStickyNav2 = _slicedToArray(_useStickyNav, 3),
+      containerRef = _useStickyNav2[0],
+      isIntersecting = _useStickyNav2[1],
+      isNotIntersecting = _useStickyNav2[2];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
     className: "main-container",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("a", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
       href: "#features",
       className: "skip-to-content-link",
       children: "Skip to content"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_KeyVisual_KeyVisual__WEBPACK_IMPORTED_MODULE_0__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Features_Features__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Extensions_Extensions__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Faq_Faq__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Subscribe_Subscribe__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__.default, {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Header_Header__WEBPACK_IMPORTED_MODULE_0__.default, {
+      scrollIn: isIntersecting,
+      scrollOut: isNotIntersecting
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_KeyVisual_KeyVisual__WEBPACK_IMPORTED_MODULE_1__.default, {
+      ref: containerRef
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Features_Features__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Extensions_Extensions__WEBPACK_IMPORTED_MODULE_3__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Faq_Faq__WEBPACK_IMPORTED_MODULE_4__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Subscribe_Subscribe__WEBPACK_IMPORTED_MODULE_5__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__.default, {})]
   });
 }
 
@@ -1321,62 +1348,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Header_useStickyNav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Header/useStickyNav */ "./src/js/components/Header/useStickyNav.js");
-/* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Header/Header */ "./src/js/components/Header/Header.js");
-/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
-
-
-
-var KeyVisual = function KeyVisual() {
-  var _useStickyNav = (0,_Header_useStickyNav__WEBPACK_IMPORTED_MODULE_0__.default)(),
-      _useStickyNav2 = _slicedToArray(_useStickyNav, 3),
-      containerRef = _useStickyNav2[0],
-      isIntersecting = _useStickyNav2[1],
-      isNotIntersecting = _useStickyNav2[2];
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("section", {
+var KeyVisual = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function (props, ref) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("section", {
     className: "kv",
-    ref: containerRef,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Header_Header__WEBPACK_IMPORTED_MODULE_1__.default, {
-      scrollIn: isIntersecting,
-      scrollOut: isNotIntersecting
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    ref: ref,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "kv__container container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
         className: "kv__illustration"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "kv__intro",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
           className: "kv__title heading--xxl",
           children: "A Simple Bookmark Manager"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
           className: "kv__text paragraph--l",
           children: "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: "kv__cta-wrapper",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
             className: "kv__cta",
             name: "intro",
             color: "blue",
             text: "Get it on Chrome",
             label: "Add extension to Chrome"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_2__.default, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
             className: "kv__cta",
             name: "intro",
             color: "gray",
@@ -1385,10 +1388,9 @@ var KeyVisual = function KeyVisual() {
           })]
         })]
       })]
-    })]
+    })
   });
-};
-
+});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (KeyVisual);
 
 /***/ }),
