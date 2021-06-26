@@ -4,6 +4,7 @@
     $root: &;
     padding: 0 32px;
     background-color: $c-blue-soft;
+    overflow: hidden;
 
     &__container {
         display: flex;
@@ -54,10 +55,12 @@
         }
 
         &.error {
-            gap: 50px;
+            #{$root}__form-cta {
+                margin-top: 30px;
 
-            @include breakpoint(sm) {
-                gap: 16px;
+                @include breakpoint(sm) {
+                    margin-top: 0;
+                }
             }
                         
             #{$root}__form-error {
@@ -102,6 +105,7 @@
 
     &__form-cta {
         flex: 1;
+        transition: margin 350ms ease-in-out;
     }
 
     &__form-error {
