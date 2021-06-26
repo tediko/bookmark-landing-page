@@ -1,13 +1,8 @@
-import useStickyNav from '../Header/useStickyNav';
-import Header from '../Header/Header';
+import { forwardRef } from 'react';
 import Button from '../shared/Button';
 
-const KeyVisual = () => {
-    const [containerRef, isIntersecting, isNotIntersecting] = useStickyNav();
-
-    return ( 
-        <section className="kv" ref={containerRef}>
-            <Header scrollIn={isIntersecting} scrollOut={isNotIntersecting} />
+const KeyVisual = forwardRef((props, ref) => (
+        <section className="kv" ref={ref}>
             <div className="kv__container container">
                 <div className="kv__illustration"></div>
                 <div className="kv__intro">
@@ -21,7 +16,6 @@ const KeyVisual = () => {
                 </div>
             </div>
         </section>
-     );
-}
+));
  
 export default KeyVisual;
