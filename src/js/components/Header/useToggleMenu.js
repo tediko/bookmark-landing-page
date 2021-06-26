@@ -9,12 +9,14 @@ const useToggleMenu = () => {
     
     const tabletBreakpoint = 768;
     let transitionDuration = 1000;
-    let swipeTriggerPoint = 40;
+    let swipeTriggerPoint = 150;
     let timer;
-    let startPosition;
-    let endPosition;
+    let startPosition = 0;
+    let endPosition = 0;
+    let touchSlideLength = 0;
 
     useEffect(() => {
+        console.log(startPosition, endPosition, touchSlideLength, swipeTriggerPoint);
         window.addEventListener('touchstart', getTouchStartPosition);
         window.addEventListener('touchmove', getTouchEndPosition);
         window.addEventListener('touchend', handleToggleOnSwipe);
@@ -41,7 +43,7 @@ const useToggleMenu = () => {
     */
     const handleToggleOnSwipe = () => {
         if (!isTransitionend) return false;
-        let touchSlideLength = endPosition - startPosition;
+        touchSlideLength = endPosition - startPosition;
         touchSlideLength > swipeTriggerPoint ? handleToggle() : null;
     }
     
@@ -68,10 +70,10 @@ const useToggleMenu = () => {
         setIsTransitionend(false);
         setIsExpanded(false);
         setIsClosing(true);
-        preventScroll(false);
         
         
         timer = setTimeout(() => {
+            preventScroll(false);
             setIsTransitionend(true);
             setIsClosing(false);
             setIsOpen(false);

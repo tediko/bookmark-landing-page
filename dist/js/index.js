@@ -1207,11 +1207,13 @@ var useToggleMenu = function useToggleMenu() {
   var isMenuOpen = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);
   var tabletBreakpoint = 768;
   var transitionDuration = 1000;
-  var swipeTriggerPoint = 40;
+  var swipeTriggerPoint = 150;
   var timer;
-  var startPosition;
-  var endPosition;
+  var startPosition = 0;
+  var endPosition = 0;
+  var touchSlideLength = 0;
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    console.log(startPosition, endPosition, touchSlideLength, swipeTriggerPoint);
     window.addEventListener('touchstart', getTouchStartPosition);
     window.addEventListener('touchmove', getTouchEndPosition);
     window.addEventListener('touchend', handleToggleOnSwipe);
@@ -1238,7 +1240,7 @@ var useToggleMenu = function useToggleMenu() {
 
   var handleToggleOnSwipe = function handleToggleOnSwipe() {
     if (!isTransitionend) return false;
-    var touchSlideLength = endPosition - startPosition;
+    touchSlideLength = endPosition - startPosition;
     touchSlideLength > swipeTriggerPoint ? handleToggle() : null;
   };
   /**
@@ -1266,8 +1268,8 @@ var useToggleMenu = function useToggleMenu() {
     setIsTransitionend(false);
     setIsExpanded(false);
     setIsClosing(true);
-    preventScroll(false);
     timer = setTimeout(function () {
+      preventScroll(false);
       setIsTransitionend(true);
       setIsClosing(false);
       setIsOpen(false);
