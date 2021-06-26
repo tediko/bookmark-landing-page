@@ -45,8 +45,12 @@
 
     &--xxl {
         @extend .heading;
-        font-size: clamp(1.86rem, 4vw, 2.9rem);
+        font-size: 1.7rem;
         line-height: 1.32em;
+        
+        @include breakpoint(xs) {
+            font-size: clamp(1.86rem, 4vw, 2.9rem);
+        }
 
         @include breakpoint(lg) {
             line-height: 1.15em;

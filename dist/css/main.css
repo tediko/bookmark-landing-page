@@ -378,8 +378,13 @@ button:focus-visible {
   font-weight: 500;
 }
 .heading--xxl {
-  font-size: clamp(1.86rem, 4vw, 2.9rem);
+  font-size: 1.7rem;
   line-height: 1.32em;
+}
+@media (min-width: 375px) {
+  .heading--xxl {
+    font-size: clamp(1.86rem, 4vw, 2.9rem);
+  }
 }
 @media (min-width: 1024px) {
   .heading--xxl {
