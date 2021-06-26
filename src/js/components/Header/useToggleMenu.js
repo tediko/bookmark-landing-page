@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const useToggleMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,39 +8,53 @@ const useToggleMenu = () => {
     const isMenuOpen = useRef(false);
     
     const tabletBreakpoint = 768;
-    let timer;
     let transitionDuration = 1000;
+    let swipeTriggerPoint = 40;
+    let timer;
+    let startPosition;
+    let endPosition;
 
+    useEffect(() => {
+        window.addEventListener('touchstart', getTouchStartPosition);
+        window.addEventListener('touchmove', getTouchEndPosition);
+        window.addEventListener('touchend', handleToggleOnSwipe);
+        
+        return (()=> {
+            window.removeEventListener('touchstart', getTouchStartPosition);
+            window.removeEventListener('touchmove', getTouchEndPosition);
+            window.removeEventListener('touchend', handleToggleOnSwipe);
+        })
+    })
+    
     /**
-    * Function to toggle showMenu() and closeMenu() depending
-    * on isOpen state. It doesn't run untill isTransitionend is true.
-    */
+     * Function to toggle showMenu() and closeMenu() depending
+     * on isOpen state. It doesn't run untill isTransitionend is true.
+     */
     const handleToggle = () => {
         if (!isTransitionend) return;
         !isOpen ? showMenu() : closeMenu();
     }
-
+    
     /**
-    * Function to restore all states to it default values.
+    * Function to invoke handeToggle() function based on length of touch slide.
+    * Invoke only when touchSlideLength is greater than swipeTriggerPoint.
     */
-    const restoreToDefault = () => {
-        setIsOpen(false);
-        setIsClosing(false);
-        setIsExpanded(false);
-        setIsTransitionend(true);
-        preventScroll(false);
+    const handleToggleOnSwipe = () => {
+        if (!isTransitionend) return false;
+        let touchSlideLength = endPosition - startPosition;
+        touchSlideLength > swipeTriggerPoint ? handleToggle() : null;
     }
-
+    
     /**
-    * Function to display menu
-    */
+     * Function to display menu
+     */
     const showMenu = () => {
         isMenuOpen.current = true;
         setIsTransitionend(false);
         setIsOpen(true);
         setIsExpanded(true);
         preventScroll(true);
-
+        
         timer = setTimeout(() => {
             setIsTransitionend(true);
             timer = null;
@@ -48,8 +62,8 @@ const useToggleMenu = () => {
     }
     
     /**
-    * Function to hide menu
-    */
+     * Function to hide menu
+     */
     const closeMenu = () => {
         setIsTransitionend(false);
         setIsExpanded(false);
@@ -62,14 +76,23 @@ const useToggleMenu = () => {
             setIsClosing(false);
             setIsOpen(false);
             isMenuOpen.current = false;
-
-
             timer = null;
         }, transitionDuration)
     }
-
+    
     /**
-    * Function to prevent window from scrolling
+    * Function to restore all states to it default values.
+    */
+    const restoreToDefault = () => {
+        setIsOpen(false);
+        setIsClosing(false);
+        setIsExpanded(false);
+        setIsTransitionend(true);
+        preventScroll(false);
+    }
+    
+    /**
+     * Function to prevent window from scrolling
     * @param    {Boolean} allowScroll    Boolean value
     */
     const preventScroll = (allowScroll) => {
@@ -86,6 +109,23 @@ const useToggleMenu = () => {
             document.documentElement.style.scrollBehavior = 'auto';
         }
     }
+
+    /**
+    * Function to get start touch position from event listener.
+    * @param    {Event} event    Event from eventListener
+    */
+    const getTouchStartPosition = event => {
+        startPosition = Math.floor(event.touches[0].clientX);
+    }
+
+    /**
+    * Function to get end touch position from event listener.
+    * @param    {Event} event    Event from eventListener
+    */
+    const getTouchEndPosition = event => {
+        endPosition = Math.floor(event.touches[0].clientX);            
+    }
+
 
     return { handleToggle, restoreToDefault, isOpen, isClosing, isExpanded, tabletBreakpoint };
 }

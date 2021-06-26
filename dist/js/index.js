@@ -1177,32 +1177,44 @@ var useToggleMenu = function useToggleMenu() {
 
   var isMenuOpen = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);
   var tabletBreakpoint = 768;
-  var timer;
   var transitionDuration = 1000;
+  var swipeTriggerPoint = 40;
+  var timer;
+  var startPosition;
+  var endPosition;
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    window.addEventListener('touchstart', getTouchStartPosition);
+    window.addEventListener('touchmove', getTouchEndPosition);
+    window.addEventListener('touchend', handleToggleOnSwipe);
+    return function () {
+      window.removeEventListener('touchstart', getTouchStartPosition);
+      window.removeEventListener('touchmove', getTouchEndPosition);
+      window.removeEventListener('touchend', handleToggleOnSwipe);
+    };
+  });
   /**
-  * Function to toggle showMenu() and closeMenu() depending
-  * on isOpen state. It doesn't run untill isTransitionend is true.
-  */
+   * Function to toggle showMenu() and closeMenu() depending
+   * on isOpen state. It doesn't run untill isTransitionend is true.
+   */
 
   var handleToggle = function handleToggle() {
     if (!isTransitionend) return;
     !isOpen ? showMenu() : closeMenu();
   };
   /**
-  * Function to restore all states to it default values.
+  * Function to invoke handeToggle() function based on length of touch slide.
+  * Invoke only when touchSlideLength is greater than swipeTriggerPoint.
   */
 
 
-  var restoreToDefault = function restoreToDefault() {
-    setIsOpen(false);
-    setIsClosing(false);
-    setIsExpanded(false);
-    setIsTransitionend(true);
-    preventScroll(false);
+  var handleToggleOnSwipe = function handleToggleOnSwipe() {
+    if (!isTransitionend) return false;
+    var touchSlideLength = endPosition - startPosition;
+    touchSlideLength > swipeTriggerPoint ? handleToggle() : null;
   };
   /**
-  * Function to display menu
-  */
+   * Function to display menu
+   */
 
 
   var showMenu = function showMenu() {
@@ -1217,8 +1229,8 @@ var useToggleMenu = function useToggleMenu() {
     }, transitionDuration);
   };
   /**
-  * Function to hide menu
-  */
+   * Function to hide menu
+   */
 
 
   var closeMenu = function closeMenu() {
@@ -1235,7 +1247,19 @@ var useToggleMenu = function useToggleMenu() {
     }, transitionDuration);
   };
   /**
-  * Function to prevent window from scrolling
+  * Function to restore all states to it default values.
+  */
+
+
+  var restoreToDefault = function restoreToDefault() {
+    setIsOpen(false);
+    setIsClosing(false);
+    setIsExpanded(false);
+    setIsTransitionend(true);
+    preventScroll(false);
+  };
+  /**
+   * Function to prevent window from scrolling
   * @param    {Boolean} allowScroll    Boolean value
   */
 
@@ -1253,6 +1277,24 @@ var useToggleMenu = function useToggleMenu() {
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
       document.documentElement.style.scrollBehavior = 'auto';
     }
+  };
+  /**
+  * Function to get start touch position from event listener.
+  * @param    {Event} event    Event from eventListener
+  */
+
+
+  var getTouchStartPosition = function getTouchStartPosition(event) {
+    startPosition = Math.floor(event.touches[0].clientX);
+  };
+  /**
+  * Function to get end touch position from event listener.
+  * @param    {Event} event    Event from eventListener
+  */
+
+
+  var getTouchEndPosition = function getTouchEndPosition(event) {
+    endPosition = Math.floor(event.touches[0].clientX);
   };
 
   return {
