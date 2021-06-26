@@ -10,7 +10,7 @@ const SubscribeForm = ({ submitForm }) => {
             <label htmlFor="email-sub" className="subscribe__form-label sr-only">Subscribe to newsletter!</label>
             <div className="subscribe__form-input-wrapper">
                 <input type="email" name="email" id="email-sub" className="subscribe__form-input" placeholder="Enter your email address" value={mail} onChange={handleChange} />
-                {error && <span className="subscribe__form-error">{errorMessage}</span>}
+                {error && <span className="subscribe__form-error" aria-live="polite">{errorMessage}</span>}
                 {error && <span className="subscribe__form-error-icon"></span>}
             </div>
             <Button className="subscribe__form-cta" name="contact" color="red" text="Contact Us" />

@@ -1483,6 +1483,7 @@ var SubscribeForm = function SubscribeForm(_ref) {
         onChange: handleChange
       }), error && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
         className: "subscribe__form-error",
+        "aria-live": "polite",
         children: errorMessage
       }), error && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
         className: "subscribe__form-error-icon"
