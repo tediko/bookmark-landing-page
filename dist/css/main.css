@@ -654,9 +654,14 @@ button:focus-visible {
   }
 }
 .btn--intro {
-  padding: 14px 16px;
+  padding: 7px 16px;
   color: white;
   letter-spacing: 0.03em;
+}
+@media (min-width: 375px) {
+  .btn--intro {
+    padding: 14px 16px;
+  }
 }
 @media (min-width: 768px) {
   .btn--intro {

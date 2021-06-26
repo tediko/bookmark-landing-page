@@ -56,9 +56,13 @@
 
     &--intro {
         @extend #{$root};
-        padding: 14px 16px;
+        padding: 7px 16px;
         color: $c-white;
         letter-spacing: 0.03em;
+
+        @include breakpoint(xs) {
+            padding: 14px 16px;
+        }
 
         @include breakpoint(md) {
             padding: 14px 23px;
