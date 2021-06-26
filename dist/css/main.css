@@ -1371,6 +1371,7 @@ button:focus-visible {
   color: white;
   font-size: 0.85rem;
   letter-spacing: 0.35em;
+  text-align: center;
 }
 .subscribe__title {
   margin-top: 14px;
