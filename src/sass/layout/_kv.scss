@@ -125,6 +125,11 @@
         margin-top: 30px;
         width: 100%;
         max-width: 360px;
+        gap: 10px;
+
+        @include breakpoint(xs) {
+            gap: unset;
+        }
 
         @include breakpoint(lg) {
             justify-content: flex-start;

@@ -847,6 +847,12 @@ button:focus-visible {
   margin-top: 30px;
   width: 100%;
   max-width: 360px;
+  gap: 10px;
+}
+@media (min-width: 375px) {
+  .kv__cta-wrapper {
+    gap: unset;
+  }
 }
 @media (min-width: 1024px) {
   .kv__cta-wrapper {
