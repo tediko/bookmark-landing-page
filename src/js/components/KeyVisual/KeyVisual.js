@@ -10,8 +10,8 @@ const KeyVisual = forwardRef((props, ref) => (
                     <p className="kv__text paragraph--l">A clean and simple interface to organize your favourite websites. Open a new 
                         browser tab and see your sites load instantly. Try it for free.</p>
                     <div className="kv__cta-wrapper">
-                        <Button className="kv__cta" name="intro" color="blue" text="Get it on Chrome" label="Add extension to Chrome"/>
-                        <Button className="kv__cta" name="intro" color="gray" text="Get it on Firefox" label="Add extension to Firefox"/>
+                        <Button className="kv__cta" name="intro" color="blue" label="Add extension to Chrome">Get it on Chrome</Button>
+                        <Button className="kv__cta" name="intro" color="gray" label="Add extension to Firefox">Get it on Firefox</Button>
                     </div>
                 </div>
             </div>
