@@ -13,7 +13,7 @@ const SubscribeForm = ({ submitForm }) => {
                 {error && <span className="subscribe__form-error" aria-live="polite">{errorMessage}</span>}
                 {error && <span className="subscribe__form-error-icon"></span>}
             </div>
-            <Button className="subscribe__form-cta" name="contact" color="red" text="Contact Us" />
+            <Button className="subscribe__form-cta" name="contact" color="red">Contact Us</Button>
         </form>
      );
 }
