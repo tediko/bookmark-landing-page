@@ -500,22 +500,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _FeaturesTabInput__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FeaturesTabInput */ "./src/js/components/Features/FeaturesTabInput.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
+/* harmony import */ var _FeaturesTabInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FeaturesTabInput */ "./src/js/components/Features/FeaturesTabInput.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -523,36 +509,14 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var FeaturesTabControls = function FeaturesTabControls(_ref) {
   var onFocus = _ref.onFocus,
       isChanging = _ref.isChanging;
-
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([{
-    index: 0,
-    idName: 'bookmarking',
-    isChecked: true,
-    labelText: 'Simple Bookmarking'
-  }, {
-    index: 1,
-    idName: 'searching',
-    isChecked: false,
-    labelText: 'Speedy Searching'
-  }, {
-    index: 2,
-    idName: 'sharing',
-    isChecked: false,
-    labelText: 'Easy Sharing'
-  }]),
-      _useState2 = _slicedToArray(_useState, 2),
-      data = _useState2[0],
-      setData = _useState2[1];
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     className: "features__tab-controls",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_FeaturesTabInput__WEBPACK_IMPORTED_MODULE_1__.default, {
-      tabs: data,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_FeaturesTabInput__WEBPACK_IMPORTED_MODULE_0__.default, {
       onFocus: onFocus,
       isChanging: isChanging
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
       className: "features__tab-bar"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
       className: "features__tab-overlay"
     })]
   });
@@ -573,32 +537,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _featuresData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./featuresData */ "./src/js/components/Features/featuresData.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
 
 var FeaturesTabInput = function FeaturesTabInput(_ref) {
-  var tabs = _ref.tabs,
-      onFocus = _ref.onFocus,
+  var onFocus = _ref.onFocus,
       isChanging = _ref.isChanging;
-  return tabs.map(function (tab) {
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+  return _featuresData__WEBPACK_IMPORTED_MODULE_1__.tabsData.map(function (data) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
         type: "radio",
         name: "tab",
-        id: tab.idName,
+        id: data.idName,
         className: "features__tab-input",
-        defaultChecked: tab.isChecked ? true : null,
+        defaultChecked: data.isChecked ? true : null,
         onFocus: onFocus,
         onClick: onFocus,
-        "data-index": tab.index
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("label", {
-        htmlFor: tab.idName,
+        "data-index": data.index
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
+        htmlFor: data.idName,
         className: "features__tab-label ".concat(isChanging ? 'active' : ''),
-        children: tab.labelText
+        children: data.labelText
       })]
-    }, tab.index);
+    }, data.index);
   });
 };
 
@@ -606,17 +571,18 @@ var FeaturesTabInput = function FeaturesTabInput(_ref) {
 
 /***/ }),
 
-/***/ "./src/js/components/Features/tabsData.js":
-/*!************************************************!*\
-  !*** ./src/js/components/Features/tabsData.js ***!
-  \************************************************/
+/***/ "./src/js/components/Features/featuresData.js":
+/*!****************************************************!*\
+  !*** ./src/js/components/Features/featuresData.js ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "tabsInfoData": () => (/* binding */ tabsInfoData),
 /* harmony export */   "tabsData": () => (/* binding */ tabsData)
 /* harmony export */ });
-var tabsData = [{
+var tabsInfoData = [{
   id: 0,
   title: 'Bookmark in one click',
   text: "Organize your bookmarks however you like. Our simple drag-and-drop interface \n        gives you complete control over how you manage your favourite sites.",
@@ -635,6 +601,22 @@ var tabsData = [{
   img: "url(/images/illustration-features-tab-3.svg)",
   imgSize: '77%'
 }];
+var tabsData = [{
+  index: 0,
+  idName: 'bookmarking',
+  isChecked: true,
+  labelText: 'Simple Bookmarking'
+}, {
+  index: 1,
+  idName: 'searching',
+  isChecked: false,
+  labelText: 'Speedy Searching'
+}, {
+  index: 2,
+  idName: 'sharing',
+  isChecked: false,
+  labelText: 'Easy Sharing'
+}];
 
 /***/ }),
 
@@ -649,7 +631,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _tabsData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabsData */ "./src/js/components/Features/tabsData.js");
+/* harmony import */ var _featuresData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./featuresData */ "./src/js/components/Features/featuresData.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -671,7 +653,7 @@ var useFeaturesToggle = function useFeaturesToggle() {
       isChanging = _useState2[0],
       setIsChanging = _useState2[1];
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_tabsData__WEBPACK_IMPORTED_MODULE_1__.tabsData[0]),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_featuresData__WEBPACK_IMPORTED_MODULE_1__.tabsInfoData[0]),
       _useState4 = _slicedToArray(_useState3, 2),
       dataToDisplay = _useState4[0],
       setDataToDisplay = _useState4[1];
@@ -711,7 +693,7 @@ var useFeaturesToggle = function useFeaturesToggle() {
       isTransitionend.current = true;
     }, transitionDuration);
     setTimeout(function () {
-      setDataToDisplay(_tabsData__WEBPACK_IMPORTED_MODULE_1__.tabsData[currIndex]);
+      setDataToDisplay(_featuresData__WEBPACK_IMPORTED_MODULE_1__.tabsInfoData[currIndex]);
     }, halfOfTransitionDuration);
   };
   /**
