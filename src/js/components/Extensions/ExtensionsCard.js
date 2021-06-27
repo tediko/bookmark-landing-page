@@ -11,7 +11,7 @@ const ExtensionsCard = ({ cards }) => {
                 </div>
                 <h3 className="extensions__card-title heading--l">Add to {card.title}</h3>
                 <p className="extensions__card-text paragraph--xm">Minimum version {card.version}</p>
-                <Button className="extensions__card-cta" name="install" color="blue" text="Add & Install Extension" />
+                <Button className="extensions__card-cta" name="install" color="blue">Add & Install Extension</Button>
             </div>
             ))}
         </React.Fragment>
