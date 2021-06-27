@@ -1471,7 +1471,7 @@ button:focus-visible {
 }
 .subscribe__form-cta {
   flex: 1;
-  transition: margin 350ms ease-in-out;
+  transition: background-color 350ms ease-in, color 350ms ease-in, border 350ms ease-in, margin 350ms ease-in-out;
 }
 .subscribe__form-error {
   visibility: hidden;
