@@ -33,7 +33,7 @@ const Faq = () => {
                 <p className="faq__text paragraph--l">Here are some of our FAQs. If you have any other questions you’d like 
                     answered please feel free to email us.</p>
                 <FaqAccordionList faqs={faqs} />
-                <Button type="anchor" className="faq__cta" name="info" color="blue" text="More Info" />
+                <Button type="anchor" className="faq__cta" name="info" color="blue">More Info</Button>
             </div>
         </section>
      );
