@@ -119,42 +119,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
-/* harmony import */ var _ExtensionsData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ExtensionsData */ "./src/js/components/Extensions/ExtensionsData.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var _shared_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../shared/Button */ "./src/js/components/shared/Button.js");
+/* harmony import */ var _ExtensionsData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExtensionsData */ "./src/js/components/Extensions/ExtensionsData.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
 
 var ExtensionsCard = function ExtensionsCard() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: _ExtensionsData__WEBPACK_IMPORTED_MODULE_2__.extensionsData.map(function (data) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-        className: "extensions__card",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-          className: "extensions__img-wrapper",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-            src: data.logo,
-            alt: "",
-            className: "extensions__card-img"
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("h3", {
-          className: "extensions__card-title heading--l",
-          children: ["Add to ", data.title]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
-          className: "extensions__card-text paragraph--xm",
-          children: ["Minimum version ", data.version]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
-          className: "extensions__card-cta",
-          name: "install",
-          color: "blue",
-          children: "Add & Install Extension"
-        })]
-      }, data.id);
-    })
+  return _ExtensionsData__WEBPACK_IMPORTED_MODULE_1__.extensionsData.map(function (data) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "extensions__card",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "extensions__img-wrapper",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+          src: data.logo,
+          alt: "",
+          className: "extensions__card-img"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("h3", {
+        className: "extensions__card-title heading--l",
+        children: ["Add to ", data.title]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+        className: "extensions__card-text paragraph--xm",
+        children: ["Minimum version ", data.version]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_0__.default, {
+        className: "extensions__card-cta",
+        name: "install",
+        color: "blue",
+        children: "Add & Install Extension"
+      })]
+    }, data.id);
   });
 };
 
