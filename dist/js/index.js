@@ -192,7 +192,7 @@ var ExtensionsCard = function ExtensionsCard(_ref) {
           className: "extensions__card-cta",
           name: "install",
           color: "blue",
-          text: "Add & Install Extension"
+          children: "Add & Install Extension"
         })]
       }, card.id);
     })
@@ -274,7 +274,7 @@ var Faq = function Faq() {
         className: "faq__cta",
         name: "info",
         color: "blue",
-        text: "More Info"
+        children: "More Info"
       })]
     })
   });
@@ -490,7 +490,7 @@ var Features = function Features() {
             className: "features__tab-cta",
             name: "info",
             color: "blue",
-            text: "More Info"
+            children: "More Info"
           })]
         })]
       })]
@@ -886,7 +886,7 @@ var DesktopNav = function DesktopNav() {
       className: "desktop-nav__cta",
       name: "login-desktop",
       color: "red",
-      text: "Login"
+      children: "Login"
     })]
   });
 };
@@ -1044,7 +1044,7 @@ var MobileNav = function MobileNav(_ref) {
         className: "mobile-nav__cta",
         name: "login-mobile",
         color: "transparent",
-        text: "Login"
+        children: "Login"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "mobile-nav__socials",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
@@ -1380,14 +1380,14 @@ var KeyVisual = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(f
             className: "kv__cta",
             name: "intro",
             color: "blue",
-            text: "Get it on Chrome",
-            label: "Add extension to Chrome"
+            label: "Add extension to Chrome",
+            children: "Get it on Chrome"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_shared_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
             className: "kv__cta",
             name: "intro",
             color: "gray",
-            text: "Get it on Firefox",
-            label: "Add extension to Firefox"
+            label: "Add extension to Firefox",
+            children: "Get it on Firefox"
           })]
         })]
       })]
@@ -1494,7 +1494,7 @@ var SubscribeForm = function SubscribeForm(_ref) {
       className: "subscribe__form-cta",
       name: "contact",
       color: "red",
-      text: "Contact Us"
+      children: "Contact Us"
     })]
   });
 };
@@ -1692,7 +1692,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Button = function Button(_ref) {
-  var type = _ref.type,
+  var children = _ref.children,
+      type = _ref.type,
       className = _ref.className,
       name = _ref.name,
       color = _ref.color,
@@ -1701,11 +1702,11 @@ var Button = function Button(_ref) {
   return type === 'anchor' ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
     href: "#",
     className: "".concat(className, " btn--").concat(name, " btn--").concat(color),
-    children: text
+    children: children
   }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
     className: "".concat(className, " btn--").concat(name, " btn--").concat(color),
     "aria-label": label ? label : null,
-    children: text
+    children: children
   });
 };
 
