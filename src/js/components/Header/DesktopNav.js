@@ -14,7 +14,7 @@ const DesktopNav = () => {
                     <a href="#" className="desktop-nav__link">Contact</a>
                 </li>
             </ul>
-            <Button type="anchor" className="desktop-nav__cta" name="login-desktop" color="red" text="Login" />
+            <Button type="anchor" className="desktop-nav__cta" name="login-desktop" color="red">Login</Button>
         </nav>
      );
 }

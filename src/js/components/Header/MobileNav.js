@@ -19,7 +19,7 @@ const MobileNav = ({ handleToggle, isOpen, isClosing, isExpanded }) => {
                         <a href="#" className="mobile-nav__link">Contact</a>
                     </li>
                 </ul>
-                <Button type="anchor" className="mobile-nav__cta" name="login-mobile" color="transparent" text="Login" />
+                <Button type="anchor" className="mobile-nav__cta" name="login-mobile" color="transparent">Login</Button>
                 <div className="mobile-nav__socials">
                     <a href="#" className="mobile-nav__socials-link" aria-label="Follow us on Facebook">
                         <Icon name="fb" size={25} color="white" />
