@@ -1,11 +1,12 @@
 import React from "react";
 import FaqAccordionItem from "./FaqAccordionItem";
+import { faqData } from "./faqData";
 
-const FaqAccordionList = ({ faqs }) => {
+const FaqAccordionList = () => {
     return (
             <ul className="faq__accordion-list">
-                {faqs.map(faq => (
-                    <FaqAccordionItem faq={faq} key={faq.id} />
+                {faqData.map(data => (
+                    <FaqAccordionItem faq={data} key={data.id} />
                 ))}
             </ul>
      );
