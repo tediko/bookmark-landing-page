@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-import { tabsData } from "./tabsData";
+import { tabsInfoData } from "./featuresData";
 
 const useFeaturesToggle = () => {
     const [isChanging, setIsChanging] = useState(false);
-    const [dataToDisplay, setDataToDisplay] = useState(tabsData[0]);
+    const [dataToDisplay, setDataToDisplay] = useState(tabsInfoData[0]);
     const prevIndex = useRef(0);
     const isTransitionend = useRef(true);
     const transitionDuration = 1000;
@@ -43,7 +43,7 @@ const useFeaturesToggle = () => {
         }, transitionDuration)
 
         setTimeout(() => {
-            setDataToDisplay(tabsData[currIndex])
+            setDataToDisplay(tabsInfoData[currIndex])
         }, halfOfTransitionDuration)
     }
 
